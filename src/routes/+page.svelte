@@ -11,12 +11,13 @@
 <style>
 	.hero {
 		text-align: center;
+		width: 100vw;
 	}
 	video {
 		width: 100vw;
 		height: 80vh;
 		position: relative;
-		object-fit: cover;
+		object-fit: fill;
 	}
 
 	.logo {

@@ -29,7 +29,7 @@
 	}
 
 	nav a {
-		padding: 1em 2em;
+		padding: 0.8em;
 		text-decoration: none;
 		color: rgb(255, 255, 255);
 		font-size: 1.2rem;
