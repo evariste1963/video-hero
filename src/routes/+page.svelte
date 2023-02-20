@@ -12,6 +12,7 @@
 		width: 100vw;
 		height: 80vh;
 		position: relative;
+		object-fit: cover;
 	}
 
 	.hero-text {
