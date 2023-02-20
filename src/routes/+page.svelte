@@ -1,7 +1,11 @@
 <!-- svelte-ignore a11y-media-has-caption -->
+<script>
+	import logo from '$lib/hero/logo.png';
+</script>
+
 <div class="hero">
 	<video autoplay muted playsinline loop src="src\lib\hero\waves.mp4" />
-	<h1 class="hero-text">Wild Women Retreats</h1>
+	<img class="logo" src={logo} alt="WWR_logo" />
 </div>
 
 <style>
@@ -15,13 +19,13 @@
 		object-fit: cover;
 	}
 
-	.hero-text {
+	.logo {
 		position: absolute;
-		width: 100%;
+		width: 30vw;
+		min-width: 300px;
 		top: 30%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		color: rgb(95, 6, 11);
-		font-size: 6rem;
+		size: 50px 200px;
 	}
 </style>

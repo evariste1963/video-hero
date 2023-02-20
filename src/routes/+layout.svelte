@@ -21,6 +21,7 @@
 <style>
 	nav {
 		text-align: center;
+		background: rgb(122, 116, 110);
 	}
 	nav ul {
 		display: flex;
@@ -30,7 +31,7 @@
 	nav a {
 		padding: 1em 2em;
 		text-decoration: none;
-		color: rgb(67, 62, 62);
+		color: rgb(255, 255, 255);
 		font-size: 1.2rem;
 	}
 </style>
