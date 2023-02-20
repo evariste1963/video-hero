@@ -24,7 +24,7 @@
 		top: 0;
 		z-index: 999;
 		text-align: center;
-		background: rgb(122, 116, 110);
+		background: rgb(6, 96, 112);
 	}
 	nav ul {
 		display: flex;
@@ -32,7 +32,7 @@
 	}
 
 	nav a {
-		padding: 0.8em;
+		padding: 0.5em 0.8em;
 		text-decoration: none;
 		color: rgb(255, 255, 255);
 		font-size: 1.2rem;

@@ -2,7 +2,7 @@
 	*::before,
 	*::after {
 		box-sizing: border-box;
-		font-family: 'Roboto', cursive;
+		font-family: Cursive;
 		padding:0;
 		margin:0;
 	}

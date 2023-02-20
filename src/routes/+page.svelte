@@ -4,8 +4,9 @@
 </script>
 
 <div class="hero">
-	<video autoplay muted playsinline loop src="src\lib\hero\waves.mp4" />
+	<video autoplay muted playsinline loop src="src\lib\hero\images\water.mp4" />
 	<img class="logo" src={logo} alt="WWR_logo" />
+	<div class="sub-text">come dip your toes in our wild and wonderful waters</div>
 </div>
 
 <section>
@@ -16,7 +17,7 @@
 <style>
 	.hero {
 		position: sticky;
-		top: 58px;
+		top: 40px;
 		text-align: center;
 		width: 100vw;
 		height: 100%;
@@ -28,6 +29,7 @@
 		height: 100vh;
 		position: relative;
 		object-fit: fill;
+		filter: blur(0px);
 	}
 
 	.logo {
@@ -40,6 +42,18 @@
 		size: 50px 200px;
 	}
 
+	.sub-text{
+		position: absolute;
+		width:100%;
+		padding: 0 auto;
+		top: 50%;
+		font-size: 2.5rem;
+		color:#fff;
+		font-style: italic;
+	}
+
+	
+
 	section {
 		position: relative;
 		z-index: 0;
@@ -49,15 +63,15 @@
 		position: relative;
 		transform: skewY(-2deg);
 		width: 100vw;
-		height: 900px;
-		background: rgba(3, 21, 39, 0.95);
+		height: 600px;
+		background:rgba(100, 142, 150, 0.99);
 		margin-top: -2%;
 	}
 	.somethingelse2 {
 		transform: skewY(1.5deg);
 		margin-top: -4%;
 		width: 100vw;
-		height: 1800px;
-		background: rgb(53, 66, 78);
+		height: 600px;
+		background: rgba(5, 65, 75, 1);
 	}
 </style>
