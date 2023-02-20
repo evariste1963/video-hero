@@ -20,6 +20,9 @@
 
 <style>
 	nav {
+		position: sticky;
+		top: 0;
+		z-index: 999;
 		text-align: center;
 		background: rgb(122, 116, 110);
 	}
