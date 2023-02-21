@@ -24,7 +24,7 @@
 		top: 0;
 		z-index: 999;
 		text-align: center;
-		background: rgb(6, 96, 112);
+		background: rgb(9, 127, 148);
 		box-shadow: 0 0 10px 0 rgb(0 0 0);
 		backface-visibility: hidden;
 	}

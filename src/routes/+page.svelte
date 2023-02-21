@@ -1,12 +1,8 @@
 <script>
-	// @ts-nocheck
-
-	// @ts-ignore
 	import logo from '$lib/hero/logo.png';
-	//import video from '$lib/hero/images/ink.mp4';
 
 	export let data;
-	// ***** subtext selection could be based on dir title --> e.g. place the videos in sun dirs with titels like 'water' 'trees' etc*****
+
 	let slugArr = data.video.split('/');
 	let title = slugArr[slugArr.length - 2];
 </script>
@@ -16,8 +12,10 @@
 	<img class="logo" src={logo} alt="WWR_logo" />
 	{#if title === 'water'}
 		<div class="sub-text">come dip your toes in our wild and wonderful waters</div>
+	{:else if title === 'nature'}
+		<div class="sub-text">let us guide you through the rushes</div>
 	{:else}
-		<div class="sub-text">welcome to our wild and wonderful site</div>
+		<div class="sub-text">Colour your mind in our wild and wonderful site</div>
 	{/if}
 </div>
 
