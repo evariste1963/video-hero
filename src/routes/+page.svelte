@@ -6,9 +6,9 @@
 	//import video from '$lib/hero/images/ink.mp4';
 
 	export let data;
+	// ***** subtext selection could be based on dir title --> e.g. place the videos in sun dirs with titels like 'water' 'trees' etc*****
 	let slugArr = data.video.split('/');
 	let title = slugArr[slugArr.length - 1].split('.')[0];
-	console.log(title);
 </script>
 
 <div class="hero">
