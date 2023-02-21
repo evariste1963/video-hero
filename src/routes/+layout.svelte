@@ -25,6 +25,8 @@
 		z-index: 999;
 		text-align: center;
 		background: rgb(6, 96, 112);
+		box-shadow: 0 0 10px 0 rgb(0 0 0);
+		backface-visibility: hidden;
 	}
 	nav ul {
 		display: flex;
