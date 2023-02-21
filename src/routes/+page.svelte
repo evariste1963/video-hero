@@ -5,27 +5,20 @@
 	import logo from '$lib/hero/logo.png';
 	//import video from '$lib/hero/images/ink.mp4';
 
-	const videos = import.meta.glob('$lib/hero/images/*.mp4');
-
-	let vidArray = [];
-	let video;
-	for (const path in videos) {
-		video = path;
-		vidArray.push(path);
-	}
+	export let data;
+	let slugArr = data.video.split('/');
+	let title = slugArr[slugArr.length - 1].split('.')[0];
+	console.log(title);
 </script>
 
 <div class="hero">
-	<video
-		autoplay
-		muted
-		playsinline
-		loop
-		src={vidArray[Math.floor(Math.random() * vidArray.length)]}
-	/>
+	<video autoplay muted playsinline loop src={data.video} />
 	<img class="logo" src={logo} alt="WWR_logo" />
-
-	<div class="sub-text">come dip your toes in our wild and wonderful waters</div>
+	{#if title === 'water' || title === 'waves'}
+		<div class="sub-text">come dip your toes in our wild and wonderful waters</div>
+	{:else}
+		<div class="sub-text">welcome to our wild and wonderful site</div>
+	{/if}
 </div>
 
 <section>
@@ -64,7 +57,7 @@
 	.sub-text {
 		position: absolute;
 		width: 100%;
-		padding: 0 auto;
+		padding: 0 5%;
 		top: 50%;
 		font-size: 2.5rem;
 		color: #fff;
