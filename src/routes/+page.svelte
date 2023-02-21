@@ -8,18 +8,23 @@
 	const videos = import.meta.glob('$lib/hero/images/*.mp4');
 
 	let vidArray = [];
+	let video;
 	for (const path in videos) {
+		video = path;
 		vidArray.push(path);
-	}
-
-	function getRandomVid(max) {
-		return Math.floor(Math.random() * max);
 	}
 </script>
 
 <div class="hero">
-	<video autoplay muted playsinline loop src={vidArray[getRandomVid(vidArray.length)]} />
+	<video
+		autoplay
+		muted
+		playsinline
+		loop
+		src={vidArray[Math.floor(Math.random() * vidArray.length)]}
+	/>
 	<img class="logo" src={logo} alt="WWR_logo" />
+
 	<div class="sub-text">come dip your toes in our wild and wonderful waters</div>
 </div>
 
