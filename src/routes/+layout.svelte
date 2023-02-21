@@ -23,18 +23,21 @@
 		position: sticky;
 		top: 0;
 		z-index: 999;
+		margin:0;
 		text-align: center;
-		background: rgb(9, 127, 148);
+		background: rgba(9, 127, 148, 1);
 		box-shadow: 0 0 10px 0 rgb(0 0 0);
 		backface-visibility: hidden;
 	}
 	nav ul {
 		display: flex;
 		justify-content: center;
+		margin:0;
 	}
 
 	nav a {
-		padding: 0.5em 0.8em;
+		/*padding: 0.5em 0.8em;*/
+		margin: 0.7% 2%;
 		text-decoration: none;
 		color: rgb(255, 255, 255);
 		font-size: 1.2rem;

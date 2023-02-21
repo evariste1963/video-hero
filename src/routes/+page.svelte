@@ -15,7 +15,7 @@
 	{:else if title === 'nature'}
 		<div class="sub-text">let us guide you through the rushes</div>
 	{:else}
-		<div class="sub-text">Colour your mind in our wild and wonderful site</div>
+		<div class="sub-text">light up your life in our wild and wonderful world</div>
 	{/if}
 </div>
 
@@ -27,7 +27,7 @@
 <style>
 	.hero {
 		position: sticky;
-		top: 40px;
+		top: 0;
 		text-align: center;
 		width: 100vw;
 		height: 100%;
@@ -40,13 +40,14 @@
 		position: relative;
 		object-fit: fill;
 		filter: blur(0px);
+		background-color:rgb(255, 224, 206)
 	}
 
 	.logo {
 		position: absolute;
 		width: 30vw;
 		min-width: 300px;
-		top: 30%;
+		top: 35%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		size: 50px 200px;
@@ -80,6 +81,6 @@
 		margin-top: -4%;
 		width: 100vw;
 		height: 600px;
-		background: rgba(5, 65, 75, 1);
+		background: rgba(9, 127, 148, 0.99);
 	}
 </style>
