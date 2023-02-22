@@ -8,7 +8,7 @@
 </script>
 
 <div class="hero">
-	<video autoplay muted playsinline loop src={data.video} />
+	<video autoplay muted loop src={data.video} />
 	<img class="logo" src={logo} alt="WWR_logo" />
 	{#if title === 'water'}
 		<div class="sub-text">come dip your toes in our wild and wonderful waters</div>
