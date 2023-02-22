@@ -40,7 +40,7 @@
 		position: relative;
 		object-fit: fill;
 		filter: blur(0px);
-		background-color: rgb(255, 224, 206);
+		background-color: #000;
 	}
 
 	.logo {
