@@ -8,8 +8,6 @@ node_modules
 !.env.example
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
-/images
-waves.mp4
-grass.mp4
-water.mp4
-ink.mp4
+videos/
+misc/
+*.mp4
