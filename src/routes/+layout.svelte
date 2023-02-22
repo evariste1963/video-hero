@@ -1,12 +1,10 @@
 <script>
 	import './app.css';
-	import { onMount } from 'svelte';
 
-	let pageIsLoaded = false;
-
-	onMount(() => {
+	const pageLoader = () => {
 		pageIsLoaded = true;
-	});
+	};
+	let pageIsLoaded = false;
 
 	let navItems = [
 		{ slug: 'Home', url: '' },
@@ -18,6 +16,7 @@
 
 {#if !pageIsLoaded}
 	<div
+		use:pageLoader
 		style="position:fixed; 
 		top:0; 
 		bottom:0; 
