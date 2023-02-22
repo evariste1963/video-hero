@@ -1,11 +1,15 @@
 <script>
 	import './app.css';
+	import { page } from '$app/stores'
 
 	const pageLoader = () => {
 		pageIsLoaded = true;
 	};
 	let pageIsLoaded = false;
 
+	let currentPage;
+	$: currentPage = $page.url.pathname;
+			
 	let navItems = [
 		{ slug: 'Home', url: '' },
 		{ slug: 'About', url: 'about' },
@@ -55,7 +59,6 @@
 		justify-content: center;
 		margin: 0;
 	}
-
 	nav a {
 		/*padding: 0.5em 0.8em;*/
 		margin: 0.7% 2%;
@@ -64,3 +67,4 @@
 		font-size: 1.2rem;
 	}
 </style>
+
