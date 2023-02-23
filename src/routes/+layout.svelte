@@ -1,6 +1,6 @@
 <script>
 	import './app.css';
-	import { page } from '$app/stores'
+	import { page } from '$app/stores';
 
 	const pageLoader = () => {
 		pageIsLoaded = true;
@@ -9,9 +9,9 @@
 
 	let currentPage;
 	$: currentPage = $page.url.pathname;
-			
+
 	let navItems = [
-		{ slug: 'Home', url: '' },
+		{ slug: 'Home', url: '/' },
 		{ slug: 'About', url: 'about' },
 		{ slug: 'Events', url: 'events' },
 		{ slug: 'Contact', url: 'contact' }
@@ -36,7 +36,15 @@
 	<nav>
 		<ul>
 			{#each navItems as link}
-				<a href="/{link.url}">{link.slug}</a>
+				{#if link.slug !== 'Home'}
+					<a
+						href="/{link.url}"
+						class:selected={$page.route.id.includes(link.url)}
+						data-sveltekit-preload-data>{link.slug}</a
+					>
+				{:else}
+					<a href={link.url} data-sveltekit-preload-data>{link.slug} </a>
+				{/if}
 			{/each}
 		</ul>
 	</nav>
@@ -66,5 +74,8 @@
 		color: rgb(255, 255, 255);
 		font-size: 1.2rem;
 	}
-</style>
 
+	.selected {
+		color: red;
+	}
+</style>

@@ -1,3 +1,4 @@
+export const prerender = true;
 const videos = import.meta.glob('$lib/hero/videos/*/*.mp4');
 
 /**
