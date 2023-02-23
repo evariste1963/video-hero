@@ -7,15 +7,17 @@
 	};
 	let pageIsLoaded = false;
 
-	let currentPage;
-	$: currentPage = $page.url.pathname;
-
 	let navItems = [
-		{ slug: 'Home', url: '/' },
-		{ slug: 'About', url: 'about' },
-		{ slug: 'Events', url: 'events' },
-		{ slug: 'Contact', url: 'contact' }
+		{ page: 'Home', path: '/' },
+		{ page: 'About', path: 'about' },
+		{ page: 'Events', path: 'events' },
+		{ page: 'Contact', path: 'contact' }
 	];
+
+	let path;
+
+	$: path = $page.route.id;
+	console.log($page.route.id.split('/'));
 </script>
 
 {#if !pageIsLoaded}
@@ -35,15 +37,15 @@
 {:else}
 	<nav>
 		<ul>
-			{#each navItems as link}
-				{#if link.slug !== 'Home'}
+			{#each navItems as navItem}
+				{#if navItem.page !== 'Home'}
 					<a
-						href="/{link.url}"
-						class:selected={$page.route.id.includes(link.url)}
-						data-sveltekit-preload-data>{link.slug}</a
+						href={navItem.path}
+						class:selected={$page.route.id.includes(navItem.path)}
+						data-sveltekit-preload-data>{navItem.page}</a
 					>
 				{:else}
-					<a href={link.url} data-sveltekit-preload-data>{link.slug} </a>
+					<a href={navItem.path} data-sveltekit-preload-data>{navItem.page} </a>
 				{/if}
 			{/each}
 		</ul>
@@ -76,6 +78,7 @@
 	}
 
 	.selected {
-		color: red;
+		padding: 0 0.5em;
+		border-bottom: 1px solid #fff;
 	}
 </style>
