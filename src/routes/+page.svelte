@@ -13,9 +13,9 @@
 	{#if title === 'water'}
 		<div class="sub-text">come dip your toes in our wild and wonderful waters</div>
 	{:else if title === 'nature'}
-		<div class="sub-text">let us guide you through the rushes</div>
+		<div class="sub-text">let us guide you through the wilderness</div>
 	{:else}
-		<div class="sub-text">light up your life in our wild and wonderful world</div>
+		<div class="sub-text">colour your life in our wild and wonderful world</div>
 	{/if}
 </div>
 
