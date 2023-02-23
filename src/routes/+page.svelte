@@ -74,7 +74,7 @@
 		width: 100vw;
 		height: 600px;
 		background: rgba(100, 142, 150, 0.99);
-		margin-top: -2%;
+		margin-top: 1%;
 	}
 	.somethingelse2 {
 		transform: skewY(1.5deg);
