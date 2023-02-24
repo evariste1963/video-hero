@@ -2,7 +2,7 @@
 	import './app.css';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-	import Loading from '../lib/components/Loading.svelte';
+	import Loader from '../lib/components/Loader.svelte';
 
 	const pageLoader = () => {
 		pageIsLoaded = true;
@@ -22,7 +22,7 @@
 		place-items:center; 
 		z-index: 9999"
 	>
-		<Loading />
+		<Loader />
 	</div>
 {:else}
 	<Navbar />

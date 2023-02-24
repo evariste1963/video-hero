@@ -1,39 +1,49 @@
 <script>
 	import logo from '$lib/hero/logo.png';
+	import Gliders from '$lib/components/Gliders.svelte';
 
 	export let data;
-
 	let slugArr = data.video.split('/');
 	let title = slugArr[slugArr.length - 2];
 </script>
 
 <div class="hero">
-	<video autoplay muted loop src={data.video} />
-	<img class="logo" src={logo} alt="WWR_logo" />
-	{#if title === 'water'}
-		<div class="sub-text">come dip your toes in our wild and wonderful waters</div>
-	{:else if title === 'nature'}
-		<div class="sub-text">let us guide you through the wilderness</div>
-	{:else}
-		<div class="sub-text">colour your life in our wild and wonderful world</div>
-	{/if}
+	<div>
+		<video autoplay muted loop src={data.video} />
+		<img class="logo" src={logo} alt="WWR_logo" />
+		{#if title === 'water'}
+			<div class="sub-text">come dip your toes in our wild and wonderful waters</div>
+		{:else if title === 'nature'}
+			<div class="sub-text">let us guide you through the wilderness</div>
+		{:else}
+			<div class="sub-text">colour your life in our wild and wonderful world</div>
+		{/if}
+	</div>
+
+	<div class="gliders">
+		<Gliders />
+	</div>
 </div>
 
 <section>
 	<div class="somethingelse" />
+
+	<div class="somethingelse2" />
 </section>
-<div class="somethingelse2" />
 
 <style>
 	.hero {
 		position: sticky;
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
 		top: 0;
 		text-align: center;
 		width: 100vw;
-		height: 100%;
+		height: 100vh;
 		z-index: -1;
-		text-align: center;
 	}
+
 	video {
 		width: 100vw;
 		height: 100vh;
@@ -62,6 +72,16 @@
 		color: #fff;
 		font-style: italic;
 	}
+	.gliders {
+		position: absolute;
+		top: 60%;
+		width: 70%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+		color: rgb(51, 50, 50);
+		padding: 0;
+	}
 
 	section {
 		position: relative;
@@ -70,12 +90,15 @@
 
 	.somethingelse {
 		position: relative;
+		display: flex;
 		transform: skewY(-2deg);
 		width: 100vw;
 		height: 600px;
+		align-items: center;
 		background: rgba(100, 142, 150, 0.99);
 		margin-top: 1%;
 	}
+
 	.somethingelse2 {
 		transform: skewY(1.5deg);
 		margin-top: -4%;
