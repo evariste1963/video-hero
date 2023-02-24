@@ -6,20 +6,15 @@
 
 {#each gliders as glider}
 	<Card>
-		<div class="gliders">
-			<p class="gliders">{glider}</p>
+		<!-- change the gliders to <button-89></button-89> -->
+		<div class="glidersBtn">
+			<a href="/" class="button-89">{glider}</a>
 		</div>
 	</Card>
 {/each}
 
 <style>
-	.gliders {
+	.glidersBtn {
 		justify-content: center;
-	}
-
-	.gliders > p {
-		padding: 0 3rem;
-		font-size: 2em;
-		color: red;
 	}
 </style>
