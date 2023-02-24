@@ -79,6 +79,7 @@
 	.somethingelse2 {
 		transform: skewY(1.5deg);
 		margin-top: -4%;
+		margin-bottom: 3em;
 		width: 100vw;
 		height: 600px;
 		background: rgba(9, 127, 148, 0.99);
