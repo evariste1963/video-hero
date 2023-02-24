@@ -19,7 +19,8 @@
 			<div class="sub-text">colour your life in our wild and wonderful world</div>
 		{/if}
 	</div>
-
+</div>
+<div class="hero-overlay">
 	<div class="gliders">
 		<Gliders />
 	</div>
@@ -42,6 +43,7 @@
 		width: 100vw;
 		height: 100vh;
 		z-index: -1;
+		background-color: rgba(147, 240, 243, 0.3);
 	}
 
 	video {
@@ -72,12 +74,20 @@
 		color: #fff;
 		font-style: italic;
 	}
-	.gliders {
+
+	.hero-overlay {
 		position: absolute;
-		top: 60%;
-		width: 70%;
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		display: flex;
+		top: 65%;
+		width: 100%;
+
+		justify-content: center;
+	}
+	.gliders {
+		position: relative;
+
+		display: flex;
+		/*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
 	}
 
 	section {

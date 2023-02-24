@@ -4,10 +4,8 @@
 
 <style>
 	.card {
-		margin: 1em 5em;
-
-		padding: 15px 15px 0px 15px;
-
-		
+		margin: 0;
+		padding: 4em 3em;
+		justify-content: center;
 	}
 </style>
