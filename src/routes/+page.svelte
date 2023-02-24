@@ -10,16 +10,17 @@
 <div class="hero">
 	<div>
 		<video autoplay muted loop src={data.video} />
-		<img class="logo" src={logo} alt="WWR_logo" />
-		{#if title === 'water'}
-			<div class="sub-text">come dip your toes in our wild and wonderful waters</div>
-		{:else if title === 'nature'}
-			<div class="sub-text">let us guide you through the wilderness</div>
-		{:else}
-			<div class="sub-text">colour your life in our wild and wonderful world</div>
-		{/if}
 	</div>
 </div>
+
+<img class="logo" src={logo} alt="WWR_logo" />
+{#if title === 'water'}
+	<div class="sub-text">come dip your toes in our wild and wonderful waters</div>
+{:else if title === 'nature'}
+	<div class="sub-text">let us guide you through the wilderness</div>
+{:else}
+	<div class="sub-text">colour your life in our wild and wonderful world</div>
+{/if}
 <div class="hero-overlay">
 	<div class="gliders">
 		<Gliders />
@@ -70,6 +71,8 @@
 		width: 100%;
 		padding: 0 5%;
 		top: 50%;
+		margin: 0 auto;
+		text-align: center;
 		font-size: 2.5rem;
 		color: #fff;
 		font-style: italic;

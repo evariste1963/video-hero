@@ -9,7 +9,7 @@
 		margin-top: auto;
 		width: 100vw;
 		height: 4rem;
-		background: rgba(97, 108, 110, 0.99);
+		background: rgba(97, 108, 110, 0.88);
 		box-shadow: 0px -1px 10px 0 rgb(0 0 0);
 		text-align: center;
 		color: #fff;
