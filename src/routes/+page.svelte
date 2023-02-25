@@ -76,21 +76,7 @@
 		font-style: italic;
 	}
 
-	.hero-overlay {
-		position: absolute;
-		display: flex;
-		top: 65%;
-		width: 100%;
-
-		justify-content: center;
-	}
-	/* .gliders {
-		position: relative;
-
-		display: flex;
-		
-	} */
-
+	
 	section {
 		position: relative;
 		z-index: 0;
