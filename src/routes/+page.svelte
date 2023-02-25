@@ -21,11 +21,9 @@
 {:else}
 	<div class="sub-text">colour your life in our wild and wonderful world</div>
 {/if}
-<div class="hero-overlay">
-	<div class="gliders">
+
 		<Gliders />
-	</div>
-</div>
+	
 
 <section>
 	<div class="somethingelse" />
@@ -86,12 +84,12 @@
 
 		justify-content: center;
 	}
-	.gliders {
+	/* .gliders {
 		position: relative;
 
 		display: flex;
-		/*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-	}
+		
+	} */
 
 	section {
 		position: relative;
