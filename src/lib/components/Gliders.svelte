@@ -1,7 +1,7 @@
 <script>
 	import Card from './Card.svelte';
 
-	let gliders = ['section 1', 'section 2', 'section 3'];
+	let gliders = ['Book an Event', 'Gallery', 'Testimonials'];
 </script>
 
 {#each gliders as glider}
