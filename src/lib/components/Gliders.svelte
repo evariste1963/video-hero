@@ -34,9 +34,9 @@ gliders a {
 		font-weight: bold;
 		width: 10em;
 		text-align: center;
-		line-height: 10vh;
-		padding: 2rem;
-		margin: 2rem;
+		line-height: 5em;
+		padding: 1.1em;
+		margin: 1.1em;
 		text-decoration: none;
 	}
 	
