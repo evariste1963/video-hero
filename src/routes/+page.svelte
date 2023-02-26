@@ -29,6 +29,8 @@
 	<div class="section1" />
 
 	<div class="section2" />
+
+	<div class="section3" />
 </section>
 
 <style>
@@ -87,7 +89,7 @@
 		display: flex;
 		transform: skewY(-2deg);
 		width: 100vw;
-		height: 600px;
+		height: 800px;
 		align-items: center;
 		background: rgba(100, 142, 150, 0.99);
 		margin-top: 1%;
@@ -98,7 +100,14 @@
 		margin-top: -4%;
 		margin-bottom: 3em;
 		width: 100vw;
-		height: 600px;
+		height: 800px;
 		background: rgba(9, 127, 148, 0.99);
+	}
+
+	.section3 {
+		width: 100vw;
+		height: 800px;
+		margin-top:-4em;
+		background: rgba(114, 72, 212, 0.99);
 	}
 </style>

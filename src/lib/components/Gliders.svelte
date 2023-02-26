@@ -10,8 +10,8 @@ function scrollIntoView({ target }) {
 </script>
 <div class="glider-bar">
 <gliders>
-{#each gliders as glider}
-		<a href=".section2" on:click|preventDefault={scrollIntoView} class="button-89">{glider}</a>	{/each}
+{#each gliders as glider, i}
+		<a href=".section{i+1}" on:click|preventDefault={scrollIntoView} class="button-89">{glider}</a>	{/each}
 </gliders>
 </div>
 
