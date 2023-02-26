@@ -1,17 +1,21 @@
 <script>
 		let gliders = ['Book an Event', 'Gallery', 'Testimonials'];
+		
+	
+function scrollIntoView({ target }) {
+	const el = document.querySelector(target.getAttribute('href'));
+	if(!el) return 
+	el.scrollIntoView({behavior: 'smooth'})
+}
 </script>
 <div class="glider-bar">
 <gliders>
 {#each gliders as glider}
-	
-		<!-- <div class="glidersBtn"> -->
-		<a href="/" class="button-89">{glider}</a>
-		<!-- </div> -->
-	
-{/each}
+		<a href=".section2" on:click|preventDefault={scrollIntoView} class="button-89">{glider}</a>	{/each}
 </gliders>
 </div>
+
+
 <style>
 	
 .glider-bar {

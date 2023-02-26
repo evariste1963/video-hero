@@ -26,9 +26,9 @@
 	
 
 <section>
-	<div class="somethingelse" />
+	<div class="section1" />
 
-	<div class="somethingelse2" />
+	<div class="section2" />
 </section>
 
 <style>
@@ -82,7 +82,7 @@
 		z-index: 0;
 	}
 
-	.somethingelse {
+	.section1 {
 		position: relative;
 		display: flex;
 		transform: skewY(-2deg);
@@ -93,7 +93,7 @@
 		margin-top: 1%;
 	}
 
-	.somethingelse2 {
+	.section2 {
 		transform: skewY(1.5deg);
 		margin-top: -4%;
 		margin-bottom: 3em;
