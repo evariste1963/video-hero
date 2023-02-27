@@ -17,9 +17,10 @@
 	}
 
 let pos;
+
 </script>
 <div class="top" />
-{#if pos > 250}
+{#if pos >= window.innerHeight - 25}
 <a class="myBtn" href=".top"  on:click|preventDefault={scrollIntoView}>Back to top</a>
 {/if}
 <svelte:window bind:scrollY={pos} />
