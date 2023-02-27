@@ -1,13 +1,28 @@
 <script>
 	import logo from '$lib/hero/logo.png';
 	import Gliders from '$lib/components/Gliders.svelte';
+	import { element } from 'svelte/internal';
 
 	export let data;
 	let slugArr = data.video.split('/');
 	let title = slugArr[slugArr.length - 2];
 
 	let sections = ['section1', 'section2', 'section3', 'section4'];
+
+	function scrollIntoView({target}){
+		const el = document.querySelector(target.getAttribute('href'));
+		if (!el) return;
+		console.log(el)
+		el.scrollIntoView({ behavior: 'smooth' });
+	}
+
+let pos;
 </script>
+<div class="top" />
+{#if pos > 250}
+<a class="myBtn" href=".top"  on:click|preventDefault={scrollIntoView}>Back to top</a>
+{/if}
+<svelte:window bind:scrollY={pos} />
 
 <div class="hero">
 	<div>
@@ -28,14 +43,32 @@
 
 <section>
 	{#each sections as section}
-		<div class={section}>
-			<button on:click|preventDefault={'top'} class="button-89">top</button>
-		</div>
+		<div class={section} />
 	{/each}
 </section>
 
 <style>
-	.hero {
+
+.myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 9999;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.myBtn:hover {
+  background-color: #555;
+}
+ 
+.hero {
 		position: sticky;
 		display: flex;
 		justify-content: center;

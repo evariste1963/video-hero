@@ -9,7 +9,7 @@
 	}
 </script>
 
-<div class="glider-bar">
+<!-- <div class="glider-bar"> -->
 	<gliders>
 		{#each gliders as glider, i}
 			<a href=".section{i + 1}" on:click|preventDefault={scrollIntoView} class="button-89"
@@ -17,21 +17,18 @@
 			>
 		{/each}
 	</gliders>
-</div>
+<!-- </div> -->
 
 <style>
-	.glider-bar {
+	
+	gliders {
 		position: absolute;
 		display: flex;
-		width: 100%;
 		top: 60%;
+		width: 100%;
+		justify-content: center;
 		height: 15em;
-		margin-top: 2em;
-	}
-
-	gliders {
-		display: flex;
-		margin: 0 auto;
+		
 	}
 
 	gliders a {
