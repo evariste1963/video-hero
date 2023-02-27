@@ -5,6 +5,8 @@
 	export let data;
 	let slugArr = data.video.split('/');
 	let title = slugArr[slugArr.length - 2];
+
+	let sections = ['section1', 'section2', 'section3', 'section4'];
 </script>
 
 <div class="hero">
@@ -25,15 +27,11 @@
 <Gliders />
 
 <section>
-	<div class="section1">
-		<a href="/">top</a>
-	</div>
-	<div class="section2">
-		<a href="/">top</a>
-	</div>
-	<div class="section3">
-		<a href="/">top</a>
-	</div>
+	{#each sections as section}
+		<div class={section}>
+			<button on:click|preventDefault={'top'} class="button-89">top</button>
+		</div>
+	{/each}
 </section>
 
 <style>
@@ -114,5 +112,14 @@
 		height: 800px;
 		margin-top: -4em;
 		background: rgba(114, 72, 212, 0.99);
+	}
+
+	.section4 {
+		position: relative;
+		display: flex;
+		width: 100vw;
+		height: 800px;
+		margin-top: -4em;
+		background: rgba(41, 90, 21, 0.99);
 	}
 </style>

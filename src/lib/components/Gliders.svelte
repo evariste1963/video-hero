@@ -1,5 +1,5 @@
 <script>
-	let gliders = ['Book an Event', 'Gallery', 'Testimonials'];
+	let gliders = ['Book an Event', 'Gallery', 'Testimonials', 'videos'];
 	//import scrollIntoView from './Scroll.svelte';
 
 	function scrollIntoView({ target }) {
