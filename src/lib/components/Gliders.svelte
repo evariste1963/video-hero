@@ -1,40 +1,41 @@
 <script>
-		let gliders = ['Book an Event', 'Gallery', 'Testimonials'];
-		
-	
-function scrollIntoView({ target }) {
-	const el = document.querySelector(target.getAttribute('href'));
-	if(!el) return 
-	el.scrollIntoView({behavior: 'smooth'})
-}
+	let gliders = ['Book an Event', 'Gallery', 'Testimonials'];
+	//import scrollIntoView from './Scroll.svelte';
+
+	function scrollIntoView({ target }) {
+		const el = document.querySelector(target.getAttribute('href'));
+		if (!el) return;
+		el.scrollIntoView({ behavior: 'smooth' });
+	}
 </script>
+
 <div class="glider-bar">
-<gliders>
-{#each gliders as glider, i}
-		<a href=".section{i+1}" on:click|preventDefault={scrollIntoView} class="button-89">{glider}</a>	{/each}
-</gliders>
+	<gliders>
+		{#each gliders as glider, i}
+			<a href=".section{i + 1}" on:click|preventDefault={scrollIntoView} class="button-89"
+				>{glider}</a
+			>
+		{/each}
+	</gliders>
 </div>
 
-
 <style>
-	
-.glider-bar {
-	position: absolute;
-	display:flex;
-	width:100%;
-	top:60%;
-	height:15em;
-	margin-top: 2em;;
+	.glider-bar {
+		position: absolute;
+		display: flex;
+		width: 100%;
+		top: 60%;
+		height: 15em;
+		margin-top: 2em;
+	}
 
-} 
-
-gliders {
+	gliders {
 		display: flex;
 		margin: 0 auto;
 	}
 
-gliders a {
-		font-size: 1.5rem;;
+	gliders a {
+		font-size: 1.5rem;
 		font-weight: bold;
 		width: 10em;
 		text-align: center;
@@ -43,5 +44,4 @@ gliders a {
 		margin: 1.1em;
 		text-decoration: none;
 	}
-	
 </style>

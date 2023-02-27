@@ -22,15 +22,18 @@
 	<div class="sub-text">colour your life in our wild and wonderful world</div>
 {/if}
 
-		<Gliders />
-	
+<Gliders />
 
 <section>
-	<div class="section1" />
-
-	<div class="section2" />
-
-	<div class="section3" />
+	<div class="section1">
+		<a href="/">top</a>
+	</div>
+	<div class="section2">
+		<a href="/">top</a>
+	</div>
+	<div class="section3">
+		<a href="/">top</a>
+	</div>
 </section>
 
 <style>
@@ -78,7 +81,6 @@
 		font-style: italic;
 	}
 
-	
 	section {
 		position: relative;
 		z-index: 0;
@@ -90,12 +92,13 @@
 		transform: skewY(-2deg);
 		width: 100vw;
 		height: 800px;
-		align-items: center;
 		background: rgba(100, 142, 150, 0.99);
 		margin-top: 1%;
 	}
 
 	.section2 {
+		position: relative;
+		display: flex;
 		transform: skewY(1.5deg);
 		margin-top: -4%;
 		margin-bottom: 3em;
@@ -105,9 +108,11 @@
 	}
 
 	.section3 {
+		position: relative;
+		display: flex;
 		width: 100vw;
 		height: 800px;
-		margin-top:-4em;
+		margin-top: -4em;
 		background: rgba(114, 72, 212, 0.99);
 	}
 </style>
