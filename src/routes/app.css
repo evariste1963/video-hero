@@ -42,8 +42,9 @@ body {
 	--_p: 0px;
 	outline-color: var(--color);
 	outline-offset: 0.05em;
-	background-color: rgb(81, 77, 83);
+	background-color: rgba(97, 108, 110, 0.99);
 	background-clip: content-box;
+	overflow-clip-margin: var(--_p);
 	color:#fff;
 }
 
