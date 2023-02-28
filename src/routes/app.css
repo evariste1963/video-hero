@@ -18,7 +18,7 @@ body {
 	--b: 3px;
 	--s: 0.45em;
 	--color: #242529;
-	margin: 2em 0;
+	margin: 0;
 	text-decoration: none;
 	padding: calc(2em + var(--s)) calc(2.5em + var(--s));
 	color: var(--color);
@@ -27,9 +27,9 @@ body {
 		var(--_p) / calc(100% - var(--b) - 2 * var(--_p)) calc(100% - var(--b) - 2 * var(--_p));
 	transition: 0.3s linear, color 0.2s, background-color 0.4s;
 	outline: var(--b) solid rgba(58, 57, 57, 0);
-	outline-offset: 1.6em;
+	outline-offset: 2em;
 	font-size: 1.25rem;
-	cursor: pointer;
+	
 	border: 0;
 	border-radius: 5%;
 	user-select: none;
@@ -43,9 +43,6 @@ body {
 	--_p: 0px;
 	outline-color: rgba(255, 255, 255, 0.8);
 	outline-offset: 0.05em;
-	/*background-color: rgba(97, 108, 110, 0.7);
-	background-clip: content-box;*/
-	
 	color:rgba(255, 255, 255, 0.8);;
 }
 

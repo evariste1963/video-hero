@@ -1,7 +1,7 @@
 <script>
 	import logo from '$lib/hero/logo.png';
 	import Gliders from '$lib/components/Gliders.svelte';
-	import { element } from 'svelte/internal';
+	import Section1 from '$lib/components/Section1.svelte'
 
 	export let data;
 	let slugArr = data.video.split('/');
@@ -12,7 +12,6 @@
 	function scrollIntoView({ target }) {
 		const el = document.querySelector(target.getAttribute('href'));
 		if (!el) return;
-		console.log(el);
 		el.scrollIntoView({ behavior: 'smooth' });
 	}
 
@@ -32,6 +31,7 @@
 </div>
 
 <img class="logo" src={logo} alt="WWR_logo" />
+<div class="subText-bg">""</div> 
 {#if title === 'water'}
 	<div class="sub-text">come dip your toes in our wild and wonderful waters</div>
 {:else if title === 'nature'}
@@ -40,8 +40,15 @@
 	<div class="sub-text">colour your life in our wild and wonderful world</div>
 {/if}
 
-<Gliders />
 
+<Gliders />
+<section>
+	<container class="section1">
+		<div class="contents1">
+<Section1 />
+</div>
+</container>
+</section>
 <section>
 	{#each sections as section}
 		<div class={section} />
@@ -57,7 +64,7 @@
 		font-size: 18px;
 		border: none;
 		outline: none;
-		background-color: red;
+		background-color: rgba(51, 83, 83, 0.9);
 		color: white;
 		cursor: pointer;
 		padding: 15px;
@@ -100,11 +107,22 @@
 		size: 50px 200px;
 	}
 
+	
+	.subText-bg {
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		font-size:2.5rem;
+		background-color: rgba(97, 108, 110, 1);
+		filter: blur(60px);
+		
+	}
+
 	.sub-text {
 		position: absolute;
+		top: 50%;
 		width: 100%;
 		padding: 0 5%;
-		top: 50%;
 		margin: 0 auto;
 		text-align: center;
 		font-size: 2.5rem;
@@ -115,6 +133,10 @@
 	section {
 		position: relative;
 		z-index: 0;
+		width:100%;
+		align-items: center;
+		justify-content: center;
+		
 	}
 
 	.section1 {
@@ -122,9 +144,20 @@
 		display: flex;
 		transform: skewY(-2deg);
 		width: 100vw;
-		height: 100vh;
-		background: rgba(100, 142, 150, 0.99);
+		height: auto;
+		background: rgba(236, 220, 196, 0.9);
 		margin-top: 1%;
+		
+		
+	}
+
+	.contents1 {
+		transform: skewY(2deg);
+		align-items: center;
+		justify-content: center;
+		margin: 2em auto;
+		text-align: center;
+		width:75%
 	}
 
 	.section2 {
@@ -135,7 +168,7 @@
 		margin-bottom: 3em;
 		width: 100vw;
 		height: 100vh;
-		background: rgba(9, 127, 148, 0.99);
+		background: transparent;
 	}
 
 	.section3 {

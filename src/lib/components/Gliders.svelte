@@ -1,5 +1,5 @@
 <script>
-	let gliders = ['Book an Event', 'Gallery', 'Testimonials', 'videos'];
+	let gliders = ['Latest Events', 'Subscribe ', 'Testimonials', 'Gallery'];
 	//import scrollIntoView from './Scroll.svelte';
 
 	function scrollIntoView({ target }) {
@@ -25,8 +25,8 @@
 		display: flex;
 		top: 60%;
 		width: 100%;
-		/*background-color: rgba(97, 108, 110, 0.7);
-		filter: blur(90px);*/
+		background-color: rgba(97, 108, 110, 0.7);
+		filter: blur(90px);
 		height: 15em;
 	}
 	gliders {
@@ -64,7 +64,7 @@
 		text-decoration: none;
 		padding: 1rem 1rem;
 		border-radius: 0.7rem;
-		margin: auto 1rem;
+		margin: 0;
 		color: rgba(255, 255, 255, 0.7);
 		background-color: rgba(97, 108, 110, 0.7);
 		cursor: pointer;
@@ -81,16 +81,18 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
-		inset: 2px;
+		inset: 2px;		
 		background: rgba(255, 255, 255, 0.6);
 		z-index: -1;
 		transform: scaleX(0);
-		transform-origin: bottom right;
+		transform-origin: top right;
 		transition: transform 0.5s ease;
 	}
+
 	gliders a:hover::before {
 		transform: scaleX(1);
-		transform-origin: bottom left;
+		transform-origin: top left;
+	
 	}
 
 	gliders a:hover {
@@ -98,11 +100,7 @@
 		color: #292727;
 		z-index: 1;
 		border-radius: 0.7rem;
+		
 	}
 
-	/*gliders a:hover {
-		background-color: rgba(43, 46, 47, 0.7);
-		font-size: 1.5rem;
-		font-weight: bold;
-	}*/
 </style>
