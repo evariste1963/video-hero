@@ -9,19 +9,19 @@
 
 	let sections = ['section1', 'section2', 'section3', 'section4'];
 
-	function scrollIntoView({target}){
+	function scrollIntoView({ target }) {
 		const el = document.querySelector(target.getAttribute('href'));
 		if (!el) return;
-		console.log(el)
+		console.log(el);
 		el.scrollIntoView({ behavior: 'smooth' });
 	}
 
-let pos;
-
+	let pos;
 </script>
+
 <div class="top" />
 {#if pos >= window.innerHeight - 25}
-<a class="myBtn" href=".top"  on:click|preventDefault={scrollIntoView}>Back to top</a>
+	<a class="myBtn" href=".top" on:click|preventDefault={scrollIntoView}>Back to top</a>
 {/if}
 <svelte:window bind:scrollY={pos} />
 
@@ -49,27 +49,26 @@ let pos;
 </section>
 
 <style>
+	.myBtn {
+		position: fixed;
+		bottom: 20px;
+		right: 30px;
+		z-index: 9999;
+		font-size: 18px;
+		border: none;
+		outline: none;
+		background-color: red;
+		color: white;
+		cursor: pointer;
+		padding: 15px;
+		border-radius: 4px;
+	}
 
-.myBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 9999;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
+	.myBtn:hover {
+		background-color: #555;
+	}
 
-.myBtn:hover {
-  background-color: #555;
-}
- 
-.hero {
+	.hero {
 		position: sticky;
 		display: flex;
 		justify-content: center;
@@ -144,7 +143,7 @@ let pos;
 		display: flex;
 		width: 100vw;
 		height: 800px;
-		margin-top: -4em;
+		margin-top: -6em;
 		background: rgba(114, 72, 212, 0.99);
 	}
 
@@ -153,7 +152,7 @@ let pos;
 		display: flex;
 		width: 100vw;
 		height: 800px;
-		margin-top: -4em;
+		margin-top: -6em;
 		background: rgba(41, 90, 21, 0.99);
 	}
 </style>
