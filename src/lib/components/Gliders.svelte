@@ -49,23 +49,60 @@
 	}
 
 	gliders a {
+		position: relative;
 		display: flex;
-		font-size: 1.25rem;
-		color: #e5dede;
-		/*font-weight: bold;*/
-		width: 10em;
-		height: 80%;
 		align-items: center;
 		justify-content: center;
-		padding: 1.1em;
-		margin: 1.1em;
+		width: 10em;
+		height: 80%;
+		border-top: solid 2px #fff;
+		border-bottom: solid 2px #fff;
+		border-left: none;
+		border-right: none;
+		font-size: 1.5rem;
+		font-weight: 500;
 		text-decoration: none;
+		padding: 1rem 1rem;
+		border-radius: 0.7rem;
+		margin: auto 1rem;
+		color: #fff;
 		background-color: rgba(97, 108, 110, 0.7);
+		cursor: pointer;
+		transition: color 1s ease;
+		z-index: 1;
+	}
+
+	gliders a::before {
+		border-radius: 0.7rem;
+		content: ' ';
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		inset: 2px;
+		background: rgba(255, 255, 255, 0.6);
+		z-index: -1;
+		transform: scaleX(0);
+		transform-origin: bottom right;
+		transition: transform 0.5s ease;
+	}
+	gliders a:hover::before {
+		transform: scaleX(1);
+		transform-origin: bottom left;
 	}
 
 	gliders a:hover {
+		font-weight: bold;
+		color: #292727;
+		z-index: 1;
+		border-radius: 0.7rem;
+	}
+
+	/*gliders a:hover {
 		background-color: rgba(43, 46, 47, 0.7);
 		font-size: 1.5rem;
 		font-weight: bold;
-	}
+	}*/
 </style>
