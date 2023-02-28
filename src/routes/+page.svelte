@@ -122,7 +122,7 @@
 		display: flex;
 		transform: skewY(-2deg);
 		width: 100vw;
-		height: 800px;
+		height: 100vh;
 		background: rgba(100, 142, 150, 0.99);
 		margin-top: 1%;
 	}
@@ -134,7 +134,7 @@
 		margin-top: -4%;
 		margin-bottom: 3em;
 		width: 100vw;
-		height: 800px;
+		height: 100vh;
 		background: rgba(9, 127, 148, 0.99);
 	}
 
@@ -142,7 +142,7 @@
 		position: relative;
 		display: flex;
 		width: 100vw;
-		height: 800px;
+		height: 100vh;
 		margin-top: -6em;
 		background: rgba(114, 72, 212, 0.99);
 	}
@@ -151,7 +151,7 @@
 		position: relative;
 		display: flex;
 		width: 100vw;
-		height: 800px;
+		height: 100vh;
 		margin-top: -6em;
 		background: rgba(41, 90, 21, 0.99);
 	}

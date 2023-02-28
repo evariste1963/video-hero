@@ -12,8 +12,9 @@
 <div class="glider-bar" />
 <gliders>
 	{#each gliders as glider, i}
-		<a href=".section{i + 1}" on:click|preventDefault={scrollIntoView} class="button-89">{glider}</a
-		>
+		<div class="text-bg button-89">
+			<a href=".section{i + 1}" on:click|preventDefault={scrollIntoView}>{glider}</a>
+		</div>
 	{/each}
 </gliders>
 
@@ -21,10 +22,11 @@
 <style>
 	.glider-bar {
 		position: absolute;
+		display: flex;
 		top: 60%;
 		width: 100%;
-		background-color: rgba(97, 108, 110, 0.7);
-		filter: blur(100px);
+		/*background-color: rgba(97, 108, 110, 0.7);
+		filter: blur(90px);*/
 		height: 15em;
 	}
 	gliders {
@@ -36,15 +38,34 @@
 		height: 15em;
 	}
 
+	.text-bg {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 15em;
+		height: 100%;
+		padding: 1.1em;
+		margin: 1.1em;
+	}
+
 	gliders a {
-		font-size: 1.5rem;
+		display: flex;
+		font-size: 1.25rem;
 		color: #e5dede;
-		font-weight: bold;
+		/*font-weight: bold;*/
 		width: 10em;
-		text-align: center;
-		line-height: 5em;
+		height: 80%;
+		align-items: center;
+		justify-content: center;
 		padding: 1.1em;
 		margin: 1.1em;
 		text-decoration: none;
+		background-color: rgba(97, 108, 110, 0.7);
+	}
+
+	gliders a:hover {
+		background-color: rgba(43, 46, 47, 0.7);
+		font-size: 1.5rem;
+		font-weight: bold;
 	}
 </style>
