@@ -35,7 +35,7 @@ with Afric, Gemma, Juli & Shelley xxx
 <img src={wildPreciousLife} alt="wild-precious-life">
 <br><br>
 <div class="lowDown">
-    <img style="width:70%;" src={wwOnBeach} alt="WW-on-beach">
+    <img style="width:40%;" src={wwOnBeach} alt="WW-on-beach">
     <div class="content-txt">
     <h2 >The Village Low Down!</h2>
 <p style="margin-left:2em;" class="lowDown-txt">
