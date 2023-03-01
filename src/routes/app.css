@@ -19,6 +19,12 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	color:rgb(74, 18, 39);
+font-weight:bold;
+
+}
+
 .button-89 {
 	--b: 3px;
 	--s: 0.45em;

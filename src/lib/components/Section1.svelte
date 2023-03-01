@@ -9,7 +9,9 @@
 <img src={summerVillage} alt="summer-village" />
 
 <h1>
-	We are so pleased to announce a new celebratory weekend: the Wild Women Retreats ‘Summer Village’!
+	We are so pleased to announce a new celebratory weekend: <span style="color:purple"
+		>the Wild Women Retreats ‘Summer Village’!</span
+	>
 </h1>
 <p class="pre-amble">
 	Despite this ‘sabbatical’ year; as Wild Women, we still feel an instinctive-need to come together
@@ -49,7 +51,7 @@
 <img src={wildPreciousLife} alt="wild-precious-life" />
 <br /><br />
 <div class="lowDown">
-	<img style="width:40%;" src={wwOnBeach} alt="WW-on-beach" />
+	<img style="width:50%;" src={wwOnBeach} alt="WW-on-beach" />
 	<div class="content-txt">
 		<h2>The Village Low Down!</h2>
 		<p style="margin-left:2em;" class="lowDown-txt">
@@ -87,14 +89,15 @@
 	</div>
 </div>
 <br /><br />
-<img src={summerVillage2} alt="summer=-village-flyer" />
+<img style="width:80%" src={summerVillage2} alt="summer=-village-flyer" />
 <br /><br />
 <div class="ko-fi">
 	<a href="https://ko-fi.com/wildwomenretreats" class="ko-fi-txt" target="”_blank”"
 		>Support Wild Women retreats using Ko-Fi donations</a
 	>
 </div>
-<br /><br />
+
+<br />
 <img style="width:60%" src={littonCheney} alt="litton-cheney" />
 <br /><br />
 <h2>
@@ -122,21 +125,26 @@ Instagram:
 
 <style>
 	.ko-fi {
-		height: auto;
 		width: 80%;
 		margin: 0 auto;
-		background: rgba(1, 26, 11, 0.7);
 		align-items: center;
-		justify-content: center;
-		padding: 1.5em;
-		border-radius: 10px;
+		display: flex;
 	}
 
 	.ko-fi-txt {
-		font-size: 1.25rem;
+		font-size: 1.7rem;
 		text-decoration: none;
+		width: 100%;
 		color: #fff;
-		padding: 2em;
+		margin: 0 auto;
+		background: rgba(51, 83, 83, 0.9);
+		padding: 1em 5em;
+		border-radius: 10px;
+	}
+
+	.ko-fi-txt:hover {
+		background: #555;
+		font-weight: bold;
 	}
 	.lowDown {
 		display: flex;
