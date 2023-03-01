@@ -9,9 +9,9 @@
 <img src={summerVillage} alt="summer-village" />
 
 <h1>
-	We are so pleased to announce a new celebratory weekend: <span style="color:purple"
-		>the Wild Women Retreats ‘Summer Village’!</span
-	>
+	We are so pleased to announce a new celebratory weekend:
+	<br />
+	<span style="color:purple">the Wild Women Retreats ‘Summer Village’!</span>
 </h1>
 <p class="pre-amble">
 	Despite this ‘sabbatical’ year; as Wild Women, we still feel an instinctive-need to come together
@@ -132,7 +132,7 @@ Instagram:
 	}
 
 	.ko-fi-txt {
-		font-size: 1.7rem;
+		font-size: 1.5rem;
 		text-decoration: none;
 		width: 100%;
 		color: #fff;

@@ -42,8 +42,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 15em;
-		height: 100%;
+
+		height: 80%;
 		padding: 1.1em;
 		margin: 1.1em;
 	}
@@ -69,6 +69,7 @@
 		background-color: rgba(97, 108, 110, 0.7);
 		cursor: pointer;
 		transition: color 1s ease;
+		transition: font-weight 1s ease;
 		z-index: 1;
 	}
 
@@ -81,7 +82,7 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
-		inset: 2px;		
+		inset: 2px;
 		background: rgba(255, 255, 255, 0.6);
 		z-index: -1;
 		transform: scaleX(0);
@@ -92,7 +93,6 @@
 	gliders a:hover::before {
 		transform: scaleX(1);
 		transform-origin: top left;
-	
 	}
 
 	gliders a:hover {
@@ -100,7 +100,5 @@
 		color: #292727;
 		z-index: 1;
 		border-radius: 0.7rem;
-		
 	}
-
 </style>
