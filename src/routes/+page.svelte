@@ -162,7 +162,7 @@
 		margin-bottom: 3em;
 		width: 100vw;
 		height: 100vh;
-		background: rgb(221, 221, 122);
+		background: rgba(221, 221, 122, 0.99);
 	}
 
 	.section3 {
