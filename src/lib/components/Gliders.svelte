@@ -12,7 +12,7 @@
 <div class="glider-bar" />
 <gliders>
 	{#each gliders as glider, i}
-		<div class="text-bg button-89">
+		<div class="text-bg"> <!-- removed class button-89 -->
 			<a href=".section{i + 1}" on:click|preventDefault={scrollIntoView}>{glider}</a>
 		</div>
 	{/each}
