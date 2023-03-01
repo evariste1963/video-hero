@@ -162,7 +162,7 @@
 		margin-bottom: 3em;
 		width: 100vw;
 		height: 100vh;
-		background: rgba(221, 221, 122, 0.95);
+		background: rgba(221, 221, 122, 0.98);
 	}
 
 	.section3 {
@@ -171,7 +171,7 @@
 		width: 100vw;
 		height: 100vh;
 		margin-top: -6em;
-		background: rgba(114, 72, 212, 0.95);
+		background: rgba(114, 72, 212, 0.98);
 	}
 
 	.section4 {
@@ -180,6 +180,6 @@
 		width: 100vw;
 		height: 100vh;
 		margin-top: -6em;
-		background: rgba(41, 90, 21, 0.95);
+		background: rgba(41, 90, 21, 0.98);
 	}
 </style>
