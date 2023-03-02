@@ -3,12 +3,15 @@
 	import Gliders from '$lib/components/Gliders.svelte';
 	import Section1 from '$lib/components/Section1.svelte';
 
+	// this creates a title variable that is used to select the Hero sub-heading text
 	export let data;
 	let slugArr = data.video.split('/');
 	let title = slugArr[slugArr.length - 2];
 
+	// an array of section -> todo: needs to be more dynamic
 	let sections = ['section2', 'section3', 'section4'];
 
+	// this is scroll function for the scroll to top button only -> todo: ?
 	function scrollIntoView({ target }) {
 		const el = document.querySelector(target.getAttribute('href'));
 		if (!el) return;
@@ -18,7 +21,7 @@
 	let pos;
 </script>
 
-<!-- this creates an empty div with the class 'topt as well as the 'back to top' button  -->
+<!-- this creates an empty div with the class 'top' as well as the 'back to top' button ->todo: use same css as gliders animation -->
 <div class="top" />
 {#if pos >= window.innerHeight - 25}
 	<a class="myBtn" href=".top" on:click|preventDefault={scrollIntoView}>Back to top</a>
@@ -32,6 +35,7 @@
 	</div>
 </div>
 
+<!-- this selects the sub-heading based on the video type from the vodei dir path-->
 <img class="logo" src={logo} alt="WWR_logo" />
 <div class="subText-bg">""</div>
 {#if title === 'water'}
