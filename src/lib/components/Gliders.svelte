@@ -26,8 +26,7 @@
 				href=".section{i + 1}"
 				id={glider.content}
 				class={glider.title}
-				on:click|preventDefault={scrollIntoView}
-			/>
+				on:click|preventDefault={scrollIntoView}>{glider.title}</a>
 		</div>
 	{/each}
 </gliders>
@@ -62,9 +61,9 @@
 		margin: 1.1em;
 	}
 
-	gliders a::after {
+	/* gliders a::after {
 		content: attr(class);
-	}
+	} */
 
 	gliders a {
 		position: relative;
@@ -94,7 +93,7 @@
 	/*slide work by changing the origin from left to right*/
 	gliders a::before {
 		border-radius: 0.7rem;
-		content: attr(id);
+		content: ' '; /*attr(id)*/
 		display: block;
 		position: absolute;
 		top: 0;
@@ -112,7 +111,7 @@
 	gliders a:hover::before {
 		transform: scaleX(1);
 		transform-origin: top left;
-		content: attr(id);
+		/*content: attr(id);*/
 	}
 
 	gliders a:hover {
