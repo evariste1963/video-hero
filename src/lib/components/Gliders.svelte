@@ -21,9 +21,13 @@
 	{#each gliders as glider, i}
 		<div class="text-bg">
 			<!-- removed class button-89 -->
-			<a href=".section{i + 1}" id={glider.content} on:click|preventDefault={scrollIntoView}
-				>{glider.title}</a
-			>
+			<!-- svelte-ignore a11y-missing-content -->
+			<a
+				href=".section{i + 1}"
+				id={glider.content}
+				class={glider.title}
+				on:click|preventDefault={scrollIntoView}
+			/>
 		</div>
 	{/each}
 </gliders>
@@ -58,6 +62,10 @@
 		margin: 1.1em;
 	}
 
+	gliders a::after {
+		content: attr(class);
+	}
+
 	gliders a {
 		position: relative;
 		display: flex;
@@ -83,9 +91,10 @@
 		z-index: 1;
 	}
 
+	/*slide work by changing the origin from left to right*/
 	gliders a::before {
 		border-radius: 0.7rem;
-		content: ' ';
+		content: attr(id);
 		display: block;
 		position: absolute;
 		top: 0;
