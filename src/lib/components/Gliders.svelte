@@ -1,6 +1,13 @@
 <!-- this creates the page scroll-to blocks-->
 <script>
-	let gliders = ['Latest Events', 'Subscribe ', 'Testimonials', 'Gallery'];
+	import { each } from 'svelte/internal';
+
+	let gliders = [
+		{ title: 'Latest Events', content: 'check for up and coming events' },
+		{ title: 'Subscribe', content: 'subscribe to our newsletter' },
+		{ title: 'Testimonials', content: 'see what people ar saying about us' },
+		{ title: 'Gallery', content: 'view are photos' }
+	];
 
 	function scrollIntoView({ target }) {
 		const el = document.querySelector(target.getAttribute('href'));
@@ -14,7 +21,9 @@
 	{#each gliders as glider, i}
 		<div class="text-bg">
 			<!-- removed class button-89 -->
-			<a href=".section{i + 1}" on:click|preventDefault={scrollIntoView}>{glider}</a>
+			<a href=".section{i + 1}" id={glider.content} on:click|preventDefault={scrollIntoView}
+				>{glider.title}</a
+			>
 		</div>
 	{/each}
 </gliders>
@@ -94,6 +103,7 @@
 	gliders a:hover::before {
 		transform: scaleX(1);
 		transform-origin: top left;
+		content: attr(id);
 	}
 
 	gliders a:hover {
