@@ -1,3 +1,4 @@
+<!-- this is the code for the 1st section on th emain page-->
 <script>
 	import summerVillage from '../../lib/images/summerVillage.jpg';
 	import summerVillage2 from '../../lib/images/summerVillage2.jpg';

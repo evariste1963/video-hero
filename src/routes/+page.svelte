@@ -18,12 +18,14 @@
 	let pos;
 </script>
 
+<!-- this creates an empty div with the class 'topt as well as the 'back to top' button  -->
 <div class="top" />
 {#if pos >= window.innerHeight - 25}
 	<a class="myBtn" href=".top" on:click|preventDefault={scrollIntoView}>Back to top</a>
 {/if}
 <svelte:window bind:scrollY={pos} />
 
+<!-- this is the main Hero area todo: move to separate component -->
 <div class="hero">
 	<div>
 		<video autoplay muted loop src={data.video} />

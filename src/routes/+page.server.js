@@ -1,3 +1,5 @@
+//this creates an array of video files on page load and then randomly selects which one to use.
+
 export const prerender = true;
 const videos = import.meta.glob('$lib/hero/videos/*/*.mp4');
 

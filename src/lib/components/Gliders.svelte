@@ -1,6 +1,6 @@
+<!-- this creates the page scroll-to blocks-->
 <script>
 	let gliders = ['Latest Events', 'Subscribe ', 'Testimonials', 'Gallery'];
-	//import scrollIntoView from './Scroll.svelte';
 
 	function scrollIntoView({ target }) {
 		const el = document.querySelector(target.getAttribute('href'));
@@ -12,7 +12,8 @@
 <div class="glider-bar" />
 <gliders>
 	{#each gliders as glider, i}
-		<div class="text-bg"> <!-- removed class button-89 -->
+		<div class="text-bg">
+			<!-- removed class button-89 -->
 			<a href=".section{i + 1}" on:click|preventDefault={scrollIntoView}>{glider}</a>
 		</div>
 	{/each}

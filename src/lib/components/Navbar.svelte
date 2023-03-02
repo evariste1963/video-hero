@@ -1,3 +1,4 @@
+<!-- this creates the navbar items based on the navItems array-->
 <script>
 	import { page } from '$app/stores';
 
@@ -40,7 +41,6 @@
 		justify-content: center;
 		background: rgba(97, 108, 110, 0.99);
 		box-shadow: 0 0 10px 0 rgb(0 0 0);
-		/*backface-visibility: hidden;*/
 	}
 
 	nav a {
