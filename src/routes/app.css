@@ -14,10 +14,12 @@ body {
 	margin: 0px;
 }
 
+/*used to smooth scroll globally*/
+/* 
 html {
 	scroll-behavior: smooth;
   }
-
+*/
 a {
 	color: rgb(13, 13, 132);
 	text-decoration: none;
