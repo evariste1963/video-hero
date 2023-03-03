@@ -4,29 +4,23 @@
 	import BackToTopBtn from '$lib/components/BackToTopBtn.svelte';
 	import Section1 from '$lib/components/Section1.svelte';
 
-	// this creates a title variable that is used to select the Hero sub-heading text
-	export let data;
-	/*let slugArr = data.video.split('/');
-	let title = slugArr[slugArr.length - 2];
-
-	// an array of section -> todo: needs to be more dynamic
-	let sections = ['section2', 'section3', 'section4'];*/
+	export let { video, title, sections } = data;
 </script>
 
 <BackToTopBtn />
 <!-- this is the main Hero area todo: move to separate component -->
 <div class="hero">
 	<div>
-		<video autoplay muted loop src={data.video} />
+		<video autoplay muted loop src={video} />
 	</div>
 </div>
 
 <!-- this selects the sub-heading based on the video type from the vodei dir path-->
 <img class="logo" src={logo} alt="WWR_logo" />
 <div class="subText-bg">""</div>
-{#if data.title === 'water'}
+{#if title === 'water'}
 	<div class="sub-text">come dip your toes in our wild and wonderful waters</div>
-{:else if data.title === 'nature'}
+{:else if title === 'nature'}
 	<div class="sub-text">let us guide you through the wilderness</div>
 {:else}
 	<div class="sub-text">colour your life in our wild and wonderful world</div>
@@ -41,7 +35,7 @@
 	</container>
 </section>
 <section>
-	{#each data.sections as section}
+	{#each sections as section}
 		<div class={section} />
 	{/each}
 </section>
