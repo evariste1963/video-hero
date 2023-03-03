@@ -4,7 +4,8 @@
 	import BackToTopBtn from '$lib/components/BackToTopBtn.svelte';
 	import Section1 from '$lib/components/Section1.svelte';
 
-	export let { video, title, sections } = data;
+	export let data;
+	let { video, title, sections } = data;
 </script>
 
 <BackToTopBtn />
@@ -28,11 +29,7 @@
 
 <Gliders />
 <section>
-	<container class="section1">
-		<div class="contents1">
-			<Section1 />
-		</div>
-	</container>
+	<Section1 />
 </section>
 <section>
 	{#each sections as section}
@@ -100,25 +97,6 @@
 		width: 100%;
 		align-items: center;
 		justify-content: center;
-	}
-
-	.section1 {
-		position: relative;
-		display: flex;
-		transform: skewY(-2deg);
-		width: 100vw;
-		height: auto;
-		background: rgba(236, 220, 196, 0.9);
-		margin-top: 1%;
-	}
-
-	.contents1 {
-		transform: skewY(2deg);
-		align-items: center;
-		justify-content: center;
-		margin: 2em auto 6em auto;
-		text-align: center;
-		width: 75%;
 	}
 
 	.section2 {
