@@ -1,6 +1,6 @@
 <!-- this creates the page scroll-to blocks-->
 <script>
-	import { each } from 'svelte/internal';
+	//import { each } from 'svelte/internal';
 
 	let gliders = [
 		{ title: 'Latest Events', content: 'check for up and coming events' },
@@ -26,7 +26,8 @@
 				href=".section{i + 1}"
 				id={glider.content}
 				class={glider.title}
-				on:click|preventDefault={scrollIntoView}>{glider.title}</a>
+				on:click|preventDefault={scrollIntoView}>{glider.title}</a
+			>
 		</div>
 	{/each}
 </gliders>
