@@ -14,8 +14,15 @@ export async function load() {
 	}
 
 	let video = await vidArray[Math.floor(Math.random() * vidArray.length)];
+	let slugArr = video.split('/');
+	let title = slugArr[slugArr.length - 2];
+
+	// an array of section -> todo: needs to be more dynamic
+	let sections = ['section2', 'section3', 'section4'];
 
 	return {
-		video
+		video,
+		title,
+		sections
 	};
 }
