@@ -57,9 +57,10 @@
 		<br /><br />
 		<div class="lowDown">
 			<img style="width:50%;" src={wwOnBeach} alt="WW-on-beach" />
-			<div class="content-txt">
+			<div style="margin-left:2em; text-align:left" class="content-txt">
 				<h2>The Village Low Down!</h2>
-				<p style="margin-left:2em;" class="lowDown-txt">
+				<br />
+				<p class="lowDown-txt">
 					£170 - Full Price Ticket
 					<br />
 					£120 - Bursary Ticket (limited)
