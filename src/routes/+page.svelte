@@ -9,6 +9,7 @@
 </script>
 
 <BackToTopBtn />
+
 <!-- this is the main Hero area todo: move to separate component -->
 <div class="hero">
 	<div>

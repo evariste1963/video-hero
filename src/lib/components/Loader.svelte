@@ -1,3 +1,4 @@
+<!-- this is the loading spinner animation, which is used while loading page (in +layout.svelte)-->
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
