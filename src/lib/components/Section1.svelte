@@ -1,5 +1,6 @@
 <!-- this is the code for the 1st section on the main page-->
 <script>
+	import { scrollTo, scrollRef, scrollTop } from "svelte-scrolling";
 	import summerVillage from '../../lib/images/summerVillage.jpg';
 	import summerVillage2 from '../../lib/images/summerVillage2.jpg';
 	import wildPreciousLife from '../../lib/images/wildPreciousLife.jpg';

@@ -1,33 +1,51 @@
 <!-- this creates the page scroll-to blocks-->
 <script>
-	//import { each } from 'svelte/internal';
+	import { scrollTo, scrollRef, scrollTop } from "svelte-scrolling";
+  import {
+    bounceInOut,
+    cubicIn,
+    cubicInOut,
+    cubicOut,
+    elasticInOut,
+    sineInOut,
+    linear,
+  } from "svelte/easing";
 
 	let gliders = [
-		{ title: 'Latest Events', content: 'check for up and coming events' },
-		{ title: 'Subscribe', content: 'subscribe to our newsletter' },
-		{ title: 'Testimonials', content: 'see what people ar saying about us' },
-		{ title: 'Gallery', content: 'view are photos' }
+		{ section: 1, title: 'Latest Events', content: 'check for up and coming events' },
+		{ section: 2, title: 'Subscribe', content: 'subscribe to our newsletter' },
+		{ section: 3, title: 'Testimonials', content: 'see what people ar saying about us' },
+		{ section: 4,title: 'Gallery', content: 'view are photos' }
 	];
 
-	function scrollIntoView({ target }) {
-		const el = document.querySelector(target.getAttribute('href'));
-		if (!el) return;
-		el.scrollIntoView({ behavior: 'smooth' });
-	}
+	 export let glidersArr =[];
+
+	 gliders.forEach(glider => {
+	glidersArr.push('section' + glider.section.toString())
+	})
+	 console.log(glidersArr);
+	 
+	// function scrollIntoView({ target }) {
+	// 	const el = document.querySelector(target.getAttribute('href'));
+	// 	if (!el) return;
+	// 	el.scrollIntoView({ behavior: 'smooth' });
+	// }
 </script>
 
 <div class="glider-bar" />
 <gliders>
-	{#each gliders as glider, i}
+	{#each glidersArr as glider, i}
 		<div class="text-bg">
+			<a href="/" use:scrollTo={{ref: glider, duration: 1000 * i, easing:sineInOut}}>{gliders[i].title}</a>
 			<!-- removed class button-89 -->
 			<!-- svelte-ignore a11y-missing-content -->
-			<a
+			<!-- <a
 				href=".section{i + 1}"
 				id={glider.content}
 				class={glider.title}
 				on:click|preventDefault={scrollIntoView}>{glider.title}</a
-			>
+			> -->
+
 		</div>
 	{/each}
 </gliders>

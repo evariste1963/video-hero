@@ -1,11 +1,15 @@
 <script>
+	import { scrollTo, scrollRef, scrollTop } from "svelte-scrolling";
 	import logo from '$lib/hero/logo.png';
 	import Gliders from '$lib/components/Gliders.svelte';
 	import BackToTopBtn from '$lib/components/BackToTopBtn.svelte';
 	import Section1 from '$lib/components/Section1.svelte';
 
+ 
 	export let data;
 	let { video, title, sections } = data;
+	console.log('page', sections);
+	
 </script>
 
 <BackToTopBtn />
@@ -33,8 +37,8 @@
 	<Section1 />
 </section>
 <section>
-	{#each sections as section}
-		<div class={section} />
+	{#each sections as section, i}
+		 <div class={section} use:scrollRef={section}/> 
 	{/each}
 </section>
 
