@@ -1,21 +1,23 @@
 <script>
+	import { scrollTo, scrollRef, scrollTop } from "svelte-scrolling";
 	// this is scroll function for the scroll to top button only -> todo: ?
-	function scrollIntoView({ target }) {
-		const el = document.querySelector(target.getAttribute('href'));
-		if (!el) return;
-		el.scrollIntoView({ behavior: 'smooth' });
-	}
+	// function scrollIntoView({ target }) {
+	// 	const el = document.querySelector(target.getAttribute('href'));
+	// 	if (!el) return;
+	// 	el.scrollIntoView({ behavior: 'smooth' });
+	// }
 
 	let pos;
 </script>
 
-<svelte:window bind:scrollY={pos} />
+<svelte:window bind:scrollY={pos} /> 
 
 <!-- this creates an empty div with the class 'top' as well as the 'back to top' button ->todo: use same css as gliders animation -->
-<div class="top" />
+<!-- <div class="top" /> -->
 {#if pos >= window.innerHeight - 25}
 	<div class="top-btn">
-		<a class="myBtn" href=".top" on:click|preventDefault={scrollIntoView}>Back to top</a>
+		
+		<button class="myBtn" on:click={() => scrollTop()}>Back to Top</button>
 	</div>
 {/if}
 
@@ -38,7 +40,7 @@
 		border-radius: 0.7rem;
 	}
 
-	.top-btn a::before {
+	.top-btn ::before {
 		border-radius: 0.7rem;
 		content: ' ';
 		display: block;
@@ -55,20 +57,20 @@
 		transition: transform 0.5s ease;
 	}
 
-	.top-btn a:hover::before {
+	.top-btn :hover::before {
 		transform: scaleX(1);
 		transform-origin: top left;
 	}
 
-	.top-btn a:hover {
+	.top-btn :hover {
 		font-weight: bold;
 		color: #292727;
 		z-index: 1;
 		border-radius: 0.7rem;
 	}
 
-	.top-btn a:active::before,
-	.top-btn a:active {
+	.top-btn :active::before,
+	.top-btn :active {
 		background-color: #2e3431;
 		color: #fff !important;
 	}

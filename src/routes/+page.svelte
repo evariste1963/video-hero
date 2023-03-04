@@ -33,14 +33,23 @@
 {/if}
 
 <Gliders />
-<section>
+
+<section class="null" />
+<!-- <div class="section1" use:scrollRef={'section1'} >
 	<Section1 />
-</section>
-<section>
+</div> -->
+
 	{#each sections as section, i}
-		 <div class={section} use:scrollRef={section}/> 
+		{#if section === 'section1'}
+		<section>
+		<Section1 />
+		</section>
+	
+	{:else}
+		 <div class={section} use:scrollRef={section}  /> 
+		 {/if}
 	{/each}
-</section>
+
 
 <style>
 	.hero {
@@ -102,6 +111,15 @@
 		width: 100%;
 		align-items: center;
 		justify-content: center;
+	}
+	.section1 {
+		position: relative;
+		display: flex;
+		transform: skewY(-2deg);
+		width: 100vw;
+		height: auto;
+		background: rgba(236, 220, 196, 0.9);
+		margin-top: 1%;
 	}
 
 	.section2 {

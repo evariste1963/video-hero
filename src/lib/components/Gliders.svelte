@@ -25,32 +25,33 @@
 	})
 	 console.log(glidersArr);
 	 
-	// function scrollIntoView({ target }) {
-	// 	const el = document.querySelector(target.getAttribute('href'));
-	// 	if (!el) return;
-	// 	el.scrollIntoView({ behavior: 'smooth' });
-	// }
+	function scrollIntoView({ target }) {
+		const el = document.querySelector(target.getAttribute('href'));
+		if (!el) return;
+		el.scrollIntoView({ behavior: 'smooth' });
+	}
 </script>
 
 <div class="glider-bar" />
 <gliders>
 	{#each glidersArr as glider, i}
 		<div class="text-bg">
-			<a href="/" use:scrollTo={{ref: glider, duration: 1000 * i, easing:sineInOut}}>{gliders[i].title}</a>
-			<!-- removed class button-89 -->
-			<!-- svelte-ignore a11y-missing-content -->
-			<!-- <a
-				href=".section{i + 1}"
-				id={glider.content}
-				class={glider.title}
-				on:click|preventDefault={scrollIntoView}>{glider.title}</a
-			> -->
+			{#if [i] == 0}
+			
+			<a
+			href=".section{i + 1}"
+			id={gliders[i].content}
+			class={gliders[i].title}
+			on:click|preventDefault={scrollIntoView}>{gliders[i].title}</a>
+			{:else}
+			<a href="/" use:scrollTo={{ref: glider, duration: 1000 * i , easing:sineInOut}}>{gliders[i].title}</a>
+			{/if}
+		
 
 		</div>
 	{/each}
 </gliders>
 
-<!-- </div> -->
 <style>
 	.glider-bar {
 		position: absolute;
