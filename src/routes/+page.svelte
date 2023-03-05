@@ -31,10 +31,8 @@
 
 <Gliders />
 
-<<<<<<< HEAD
-<section class="null" />
 
-	{#each sections as section, i}
+{#each sections as section, i}
 		{#if section === 'section1'}
 			<section>
 				<Section1 />
@@ -45,7 +43,6 @@
 		{/if}
 	{/each}
 
-=======
 <!-- not sure we need the next line -->
 <!-- <section class="null" /> -->
 {#each sections as section, i}
@@ -57,7 +54,6 @@
 		<div class={section} use:scrollRef={section} />
 	{/if}
 {/each}
->>>>>>> a711152379a3d47447a73353c46330f3289aa34e
 
 <style>
 	.hero {
@@ -120,10 +116,6 @@
 		height: auto;
 		align-items: center;
 		justify-content: center;
-<<<<<<< HEAD
-	}
-	
-=======
 	} */
 	.section1 {
 		position: relative;
@@ -135,7 +127,6 @@
 		margin-top: 0;
 	}
 
->>>>>>> a711152379a3d47447a73353c46330f3289aa34e
 	.section2 {
 		position: relative;
 		display: flex;
