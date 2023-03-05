@@ -1,15 +1,12 @@
 <script>
-	import { scrollTo, scrollRef, scrollTop } from "svelte-scrolling";
+	import { scrollRef } from 'svelte-scrolling';
 	import logo from '$lib/hero/logo.png';
 	import Gliders from '$lib/components/Gliders.svelte';
 	import BackToTopBtn from '$lib/components/BackToTopBtn.svelte';
 	import Section1 from '$lib/components/Section1.svelte';
 
- 
 	export let data;
 	let { video, title, sections } = data;
-	console.log('page', sections);
-	
 </script>
 
 <BackToTopBtn />
@@ -34,6 +31,7 @@
 
 <Gliders />
 
+<<<<<<< HEAD
 <section class="null" />
 
 	{#each sections as section, i}
@@ -47,6 +45,19 @@
 		{/if}
 	{/each}
 
+=======
+<!-- not sure we need the next line -->
+<!-- <section class="null" /> -->
+{#each sections as section, i}
+	{#if section === 'section1'}
+		<div class={section} use:scrollRef={section}>
+			<Section1 />
+		</div>
+	{:else}
+		<div class={section} use:scrollRef={section} />
+	{/if}
+{/each}
+>>>>>>> a711152379a3d47447a73353c46330f3289aa34e
 
 <style>
 	.hero {
@@ -102,14 +113,29 @@
 		font-style: italic;
 	}
 
-	section {
+	/* section {
 		position: relative;
 		z-index: 0;
 		width: 100%;
+		height: auto;
 		align-items: center;
 		justify-content: center;
+<<<<<<< HEAD
 	}
 	
+=======
+	} */
+	.section1 {
+		position: relative;
+		display: flex;
+		transform: skewY(-2deg);
+		width: 100vw;
+		/* height: 100vh; */
+		background: rgba(236, 220, 196, 0.9);
+		margin-top: 0;
+	}
+
+>>>>>>> a711152379a3d47447a73353c46330f3289aa34e
 	.section2 {
 		position: relative;
 		display: flex;
@@ -117,7 +143,7 @@
 		margin-top: -4%;
 		margin-bottom: 3em;
 		width: 100vw;
-		height: 100vh;
+		height: 105vh;
 		background: rgba(221, 221, 122, 0.98);
 	}
 
@@ -125,11 +151,10 @@
 		position: relative;
 		display: flex;
 		width: 100vw;
-		height: 100vh;
+		height: 105vh;
 		margin-top: -6em;
 		background: rgba(114, 72, 212, 0.98);
 	}
-
 	.section4 {
 		position: relative;
 		display: flex;
