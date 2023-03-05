@@ -152,6 +152,7 @@
 		margin: 2em auto 6em auto;
 		text-align: center;
 		width: 75%;
+		top: 10em
 	}
 
 	.ko-fi {

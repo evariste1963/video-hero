@@ -44,7 +44,7 @@
 			class={gliders[i].title}
 			on:click|preventDefault={scrollIntoView}>{gliders[i].title}</a>
 			{:else}
-			<a href="/" use:scrollTo={{ref: glider, duration: 1000 * i , easing:sineInOut}}>{gliders[i].title}</a>
+			<a href="/" use:scrollTo={{ref: glider,  offset: -30, duration: 1000 * i , easing:sineInOut}}>{gliders[i].title}</a>
 			{/if}
 		
 

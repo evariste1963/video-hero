@@ -35,19 +35,16 @@
 <Gliders />
 
 <section class="null" />
-<!-- <div class="section1" use:scrollRef={'section1'} >
-	<Section1 />
-</div> -->
 
 	{#each sections as section, i}
 		{#if section === 'section1'}
-		<section>
-		<Section1 />
-		</section>
+			<section>
+				<Section1 />
+			</section>
 	
-	{:else}
-		 <div class={section} use:scrollRef={section}  /> 
-		 {/if}
+		{:else}
+			 <div class={section} use:scrollRef={section}  /> 
+		{/if}
 	{/each}
 
 
@@ -112,16 +109,7 @@
 		align-items: center;
 		justify-content: center;
 	}
-	.section1 {
-		position: relative;
-		display: flex;
-		transform: skewY(-2deg);
-		width: 100vw;
-		height: auto;
-		background: rgba(236, 220, 196, 0.9);
-		margin-top: 1%;
-	}
-
+	
 	.section2 {
 		position: relative;
 		display: flex;
