@@ -9,7 +9,7 @@
 
 <!-- <div class="section1" > -->
 <div class="contents1">
-	<img src={summerVillage} alt="summer-village" />
+	<img style="margin-top:2%;" src={summerVillage} alt="summer-village" />
 
 	<h1>
 		We are so pleased to announce a new celebratory weekend
@@ -131,16 +131,7 @@
 
 <!-- </div> -->
 <style>
-	/* .section1 {
-		position: relative;
-		display: flex;
-		transform: skewY(-2deg);
-		width: 100vw;
-		height: auto;
-		background: rgba(236, 220, 196, 0.9);
-		margin-top: 1%;
-	} */
-
+	
 	.contents1 {
 		transform: skewY(2deg);
 		align-items: center;
@@ -148,7 +139,7 @@
 		margin: 3em auto 6em auto;
 		text-align: center;
 		width: 75%;
-		top: 10em
+		
 	}
 
 	.ko-fi {
