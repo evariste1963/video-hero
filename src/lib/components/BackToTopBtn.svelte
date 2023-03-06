@@ -1,5 +1,5 @@
 <script>
-	import { scrollTo, scrollRef, scrollTop } from "svelte-scrolling";
+	import { scrollTop } from 'svelte-scrolling';
 	// this is scroll function for the scroll to top button only -> todo: ?
 	// function scrollIntoView({ target }) {
 	// 	const el = document.querySelector(target.getAttribute('href'));
@@ -10,13 +10,13 @@
 	let pos;
 </script>
 
-<svelte:window bind:scrollY={pos} /> 
+<!-- this is used to get the scroll position of the page-->
+<svelte:window bind:scrollY={pos} />
 
 <!-- this creates an empty div with the class 'top' as well as the 'back to top' button ->todo: use same css as gliders animation -->
 <!-- <div class="top" /> -->
 {#if pos >= window.innerHeight - 25}
 	<div class="top-btn">
-		
 		<button class="myBtn" on:click={() => scrollTop()}>Back to Top</button>
 	</div>
 {/if}
@@ -24,7 +24,7 @@
 <style>
 	.myBtn {
 		position: fixed;
-		bottom: 20px;
+		bottom: 4em;
 		right: 30px;
 		z-index: 9999;
 		font-size: 18px;
@@ -65,7 +65,7 @@
 	.top-btn :hover {
 		font-weight: bold;
 		color: #292727;
-		z-index: 1;
+		z-index: 9999;
 		border-radius: 0.7rem;
 	}
 
