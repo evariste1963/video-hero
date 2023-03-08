@@ -38,6 +38,7 @@
 		cursor: pointer;
 		padding: 15px;
 		border-radius: 0.7rem;
+		box-shadow: 4px 4px 4px 0 rgba(97, 108, 110, 0.8);
 	}
 
 	.top-btn ::before {
