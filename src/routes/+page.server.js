@@ -18,11 +18,11 @@ export async function load() {
 	let title = slugArr[slugArr.length - 2];
 
 	// an array of section -> todo: needs to be more dynamic based on sections array
-	let sections = ['section1', 'section2', 'section3', 'section4'];
+	//let sections = ['section1', 'section2', 'section3', 'section4'];
 
 	return {
 		video,
 		title,
-		sections
+		//sections
 	};
 }
