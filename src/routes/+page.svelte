@@ -18,9 +18,9 @@
 
 <!-- this is the main Hero area todo: move to separate component -->
 <div class="hero">
-	<div>
+	
 		<video autoplay muted loop src={video} />
-	</div>
+	
 </div>
 
 <!-- this selects the sub-heading based on the video type from the vodei dir path-->
@@ -55,6 +55,7 @@
 		height: 100vh;
 		z-index: -1;
 		background-color: rgba(147, 240, 243, 0.3);
+		
 	}
 
 	video {
@@ -64,6 +65,7 @@
 		object-fit: fill;
 		filter: blur(0px);
 		background-color: #000;
+		
 	}
 
 	.logo {
