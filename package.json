@@ -31,7 +31,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"svelte-scrolling": "^1.2.2",
-		"svelte-youtube-embed": "^0.1.8"
+		"svelte-scrolling": "^1.2.2"
 	}
 }
