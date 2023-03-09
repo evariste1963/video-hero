@@ -41,7 +41,7 @@
 		top: 0;
 		z-index: 999;
 		margin: 0;
-		background: rgba(97, 108, 110, 0.99);
+		background: rgba(97, 108, 110, 0.96);
 		box-shadow: 0 0 10px 0 rgb(0 0 0);
 	}
 

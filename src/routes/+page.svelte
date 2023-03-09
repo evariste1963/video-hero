@@ -52,7 +52,7 @@
 		top: 0;
 		text-align: center;
 		width: 100%;
-		height: 100vh;
+		height: 105vh;
 		z-index: -1;
 		background-color: rgba(147, 240, 243, 0.3);
 		
@@ -106,7 +106,8 @@
 		width: 100%;
 		height: auto;
 		background: rgba(236, 220, 196, 0.98);
-		margin-top: 1%;
+		margin-top: 4em;
+		padding-bottom: 4em;
 	}
 	
 	.section2 {
