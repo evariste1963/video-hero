@@ -1,5 +1,5 @@
 <script>
-	import Youtube from 'svelte-youtube-embed';
+	import { YouTube } from 'sveltekit-embed'
 </script>
 
 <div class="contents3">
@@ -17,11 +17,10 @@
 
 	<h3>Here's Netty and Stefi in conversation at the Wild Women Retreats Summer Retreat 2018</h3>
 	<div class="video">
-		<Youtube
-			id="r4363PQQIDA"
-			--overlay-bg-color="rgba(0, 0, 0, 0.9)"
-			--overlay-transition="all 500ms linear"
-			altThumb={true}
+		<YouTube 
+			youTubeId="r4363PQQIDA"
+			aspectRatio='16:9'
+			autoplay=false
 		/>
 	</div>
 </div>
