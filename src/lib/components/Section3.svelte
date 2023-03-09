@@ -17,7 +17,12 @@
 
 	<h3>Here's Netty and Stefi in conversation at the Wild Women Retreats Summer Retreat 2018</h3>
 	<div class="video">
-		<Youtube id="r4363PQQIDA" />
+		<Youtube
+			id="r4363PQQIDA"
+			--overlay-bg-color="rgba(0, 0, 0, 0.9)"
+			--overlay-transition="all 500ms linear"
+			altThumb={true}
+		/>
 	</div>
 </div>
 
@@ -38,7 +43,6 @@
 	.video {
 		width: 80%;
 		margin: 1em auto;
-		align-items: center;
-		justify-content: center;
+		height: auto;
 	}
 </style>
