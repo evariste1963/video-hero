@@ -43,9 +43,8 @@
 	.video {
 		margin: 1em auto;
 		color: rgba(0, 0, 0, 0);
-		height: auto;
 		max-width: 750px;
-		height: max-content;
+		height: auto;
 		background-color: rgba(0, 0, 0, 0.8);
 	}
 </style>
