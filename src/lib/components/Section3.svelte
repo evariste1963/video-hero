@@ -14,7 +14,7 @@
 			Rachael, 2018 Retreat</span
 		>
 	</p>
-
+<br>
 	<h3>Here's Netty and Stefi in conversation at the Wild Women Retreats Summer Retreat 2018</h3>
 	<div class="video">
 		<YouTube 
