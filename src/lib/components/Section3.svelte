@@ -42,7 +42,7 @@
 	.video {
 		margin: 1em auto;
 		color: rgba(0, 0, 0, 0);
-		max-width: 750px;
+		max-width: 1000px;
 		height: auto;
 		background-color: rgba(0, 0, 0, 0.8);
 	}

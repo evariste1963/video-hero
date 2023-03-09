@@ -1,6 +1,6 @@
 <script>
 	import { scrollRef } from 'svelte-scrolling';
-	import logo from '$lib/hero/logo.png';
+	import logo from '$lib/images/logo.png';
 	import Gliders from '$lib/components/Gliders.svelte';
 	import BackToTopBtn from '$lib/components/BackToTopBtn.svelte';
 	import Section1 from '$lib/components/Section1.svelte';
@@ -51,15 +51,15 @@
 		margin: 0 auto;
 		top: 0;
 		text-align: center;
-		width: 100vw;
+		width: 100%;
 		height: 100vh;
 		z-index: -1;
 		background-color: rgba(147, 240, 243, 0.3);
 	}
 
 	video {
-		width: 100vw;
-		height: 100vh;
+		width: 100%;
+		height: auto;
 		position: relative;
 		object-fit: fill;
 		filter: blur(0px);
@@ -101,7 +101,7 @@
 		position: relative;
 		display: flex;
 		transform: skewY(-2deg);
-		width: 100vw;
+		width: 100%;
 		height: auto;
 		background: rgba(236, 220, 196, 0.98);
 		margin-top: 1%;
@@ -113,7 +113,7 @@
 		transform: skewY(1.5deg);
 		margin-top: -4%;
 		margin-bottom: 3em;
-		width: 100vw;
+		width: 100%;
 		height: 105vh;
 		background: rgba(114, 72, 212, 1);
 	}
@@ -121,15 +121,15 @@
 	.section3 {
 		position: relative;
 		display: flex;
-		width: 100vw;
+		width: 100%;
 		height: 105vh;
 		margin-top: -6em;
-		background: rgba(221, 221, 122, 0.95);
+		background: rgba(253, 253, 169, 0.95);
 	}
 	.section4 {
 		position: relative;
 		display: flex;
-		width: 100vw;
+		width: 100%;
 		height: 100vh;
 		margin-top: 0;
 		background: rgba(41, 90, 21, 0.95);

@@ -9,9 +9,11 @@
 body {
 	/*keeps footer at bottom*/
 	min-height: 100vh;
+	min-width:100%;
 	display: flex;
 	flex-direction: column;
 	margin: 0px;
+	box-sizing: border-box;
 }
 
 /*used to smooth scroll globally*/

@@ -1,6 +1,7 @@
 <!-- this creates the navbar items based on the navItems array-->
 <script>
 	import { page } from '$app/stores';
+	import  logo  from '$lib/images/logo.png'
 
 	let navItems = [
 		{ page: 'Home', path: '/' },
@@ -11,6 +12,8 @@
 </script>
 
 <nav>
+	<img src={logo} width="150" alt="logo" class="logo">
+	<div class="links">
 	{#each navItems as navItem}
 		{#if navItem.page !== 'Home'}
 			<a
@@ -27,20 +30,32 @@
 			</a>
 		{/if}
 	{/each}
+</div>
 </nav>
 
 <style>
 	nav {
 		position: fixed;
-		width: 100vw;
+		width: 100%;
 		display: flex;
 		top: 0;
 		z-index: 999;
 		margin: 0;
-		text-align: center;
-		justify-content: center;
 		background: rgba(97, 108, 110, 0.99);
 		box-shadow: 0 0 10px 0 rgb(0 0 0);
+	}
+
+	.links {
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		width:100%
+	}
+
+	.logo {
+		margin-left: 2em;
 	}
 
 	nav a {
