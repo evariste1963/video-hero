@@ -7,7 +7,6 @@
 	import wwOnBeach from '../../lib/images/wwOnBeach.jpg';
 </script>
 
-<!-- <div class="section1" > -->
 <div class="contents1">
 	<img style="margin-top:2%;" src={summerVillage} alt="summer-village" />
 

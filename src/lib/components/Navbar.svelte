@@ -11,26 +11,27 @@
 	];
 </script>
 
+
 <nav>
-	<img src={logo} width="150" alt="logo" class="logo">
-	<div class="links">
-	{#each navItems as navItem}
-		{#if navItem.page !== 'Home'}
-			<a
-				href={navItem.path}
-				class:selected={$page.route.id.includes(navItem.path)}
-				data-sveltekit-preload-data>{navItem.page}</a
-			>
-		{:else}
-			<a
-				href={navItem.path}
-				class:selected={$page.route.id.split('/')[1] === ''}
-				data-sveltekit-preload-data
-				>{navItem.page}
-			</a>
-		{/if}
-	{/each}
-</div>
+	<img src={logo} alt="logo" class="logo">
+	<div class="links">		
+		{#each navItems as navItem}
+			{#if navItem.page !== 'Home'}
+				<a
+					href={navItem.path}
+					class:selected={$page.route.id.includes(navItem.path)}
+					data-sveltekit-preload-data>{navItem.page}</a
+				>
+			{:else}
+				<a
+					href={navItem.path}
+					class:selected={$page.route.id.split('/')[1] === ''}
+					data-sveltekit-preload-data
+					>{navItem.page}
+				</a>
+			{/if}
+		{/each}
+	</div>
 </nav>
 
 <style>
@@ -41,21 +42,23 @@
 		top: 0;
 		z-index: 999;
 		margin: 0;
-		background: rgba(97, 108, 110, 0.96);
+		background: rgba(97, 108, 110, 0.95);
 		box-shadow: 0 0 10px 0 rgb(0 0 0);
 	}
 
 	.links {
 		display: flex;
 		text-align: center;
-		justify-content: center;
+		justify-content: right;
 		align-items: center;
-		margin: 0 auto;
+		margin: 0 2em;
 		width:100%
 	}
 
 	.logo {
+		width: 9.3em;
 		margin-left: 2em;
+		
 	}
 
 	nav a {
