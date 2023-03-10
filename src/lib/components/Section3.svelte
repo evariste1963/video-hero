@@ -1,5 +1,5 @@
 <script>
-	import { YouTube } from 'sveltekit-embed'
+	import { YouTube } from 'sveltekit-embed';
 </script>
 
 <div class="contents3">
@@ -14,14 +14,10 @@
 			Rachael, 2018 Retreat</span
 		>
 	</p>
-<br>
+	<br />
 	<h3>Here's Netty and Stefi in conversation at the Wild Women Retreats Summer Retreat 2018</h3>
 	<div class="video">
-		<YouTube 
-			youTubeId="r4363PQQIDA"
-			aspectRatio='16:9'
-			autoplay=false
-		/>
+		<YouTube youTubeId="r4363PQQIDA" aspectRatio="16:9" autoplay="false" />
 	</div>
 </div>
 
