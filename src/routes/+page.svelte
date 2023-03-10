@@ -131,7 +131,6 @@
 	}
 	.section4 {
 		position: relative;
-
 		background: rgba(41, 90, 21, 0.95);
 	}
 </style>
