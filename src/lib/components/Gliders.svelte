@@ -30,7 +30,7 @@
 					href="/"
 					use:scrollTo={{
 						ref: glider,
-						offset: -30,
+						offset: -35,
 						duration: 1000 * (1 + i / 2),
 						easing: sineInOut
 					}}>{gliders[i].title}</a

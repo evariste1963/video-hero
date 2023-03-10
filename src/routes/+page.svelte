@@ -11,16 +11,19 @@
 	export let data;
 	let { video, title } = data;
 
-	let sections = [{class: 'section1', title: Section1}, {class: 'section2', title: Section2}, {class: 'section3', title: Section3}, {class: 'section4', title: Section4}]
+	let sections = [
+		{ class: 'section1', title: Section1 },
+		{ class: 'section2', title: Section2 },
+		{ class: 'section3', title: Section3 },
+		{ class: 'section4', title: Section4 }
+	];
 </script>
 
 <BackToTopBtn />
 
 <!-- this is the main Hero area todo: move to separate component -->
 <div class="hero">
-	
-		<video autoplay muted loop src={video} />
-	
+	<video autoplay muted loop src={video} />
 </div>
 
 <!-- this selects the sub-heading based on the video type from the vodei dir path-->
@@ -42,7 +45,6 @@
 	</div>
 {/each}
 
-
 <style>
 	.hero {
 		position: sticky;
@@ -55,7 +57,6 @@
 		height: 105vh;
 		z-index: -1;
 		background-color: rgba(147, 240, 243, 0.3);
-		
 	}
 
 	video {
@@ -65,7 +66,6 @@
 		object-fit: fill;
 		filter: blur(0px);
 		background-color: #000;
-		
 	}
 
 	.logo {
@@ -109,7 +109,7 @@
 		margin-top: 4em;
 		padding-bottom: 4em;
 	}
-	
+
 	.section2 {
 		position: relative;
 		display: flex;
@@ -131,11 +131,7 @@
 	}
 	.section4 {
 		position: relative;
-		display: flex;
-		width: 100%;
-		height: 100vh;
-		margin-top: 0;
+
 		background: rgba(41, 90, 21, 0.95);
 	}
-
 </style>
