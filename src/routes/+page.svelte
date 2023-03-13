@@ -117,7 +117,7 @@
 		margin-top: -4%;
 		margin-bottom: 3em;
 		width: 100%;
-		height: 105vh;
+		height: auto;
 		background: rgba(114, 72, 212, 1);
 	}
 
@@ -125,7 +125,7 @@
 		position: relative;
 		display: flex;
 		width: 100%;
-		height: 105vh;
+		height: auto;
 		margin-top: -6em;
 		background: rgba(253, 253, 169, 0.95);
 	}
@@ -133,7 +133,7 @@
 		position: relative;
 		display: flex;
 		width: 100%;
-		height: 105vh;
+		height: auto;
 		margin-top: 0;
 		background: rgba(17, 87, 3, 0.95);
 	}
