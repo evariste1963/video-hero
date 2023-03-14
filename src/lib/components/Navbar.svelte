@@ -42,7 +42,7 @@
 		top: 0;
 		z-index: 999;
 		margin: 0;
-		background: rgba(97, 108, 110, 0.95);
+		background: rgba(97, 108, 110, 0.98);
 		box-shadow: 0 0 10px 0 rgb(0 0 0);
 	}
 

@@ -19,6 +19,7 @@
 	<div class="video">
 		<YouTube youTubeId="r4363PQQIDA" aspectRatio="16:9" autoPlay="false" />
 	</div>
+	
 </div>
 
 <style>

@@ -44,7 +44,6 @@
 		<svelte:component this={section.title} />
 	</div>
 {/each}
-
 <style>
 	.hero {
 		position: sticky;
@@ -125,7 +124,8 @@
 		position: relative;
 		display: flex;
 		width: 100%;
-		height: auto;
+		min-height: 1000px;
+		height:auto;
 		margin-top: -6em;
 		background: rgba(253, 253, 169, 0.95);
 	}

@@ -22,15 +22,15 @@
 	{#each glidersArr as glider, i}
 		<div class="text-bg">
 			{#if [i] == 0}
-				<a href="/" use:scrollTo={{ ref: glider, offset: -20, duration: 1000, easing: sineInOut }}
+				<a href="/" use:scrollTo={{ ref: glider, offset: -20, duration: 1500, easing: sineInOut }}
 					>{gliders[i].title}</a
 				>
 			{:else}
 				<a
 					href="/"
-					use:scrollTo={{
+						use:scrollTo={{
 						ref: glider,
-						offset: -35,
+						offset: -65,
 						duration: 1000 * (1 + i / 2),
 						easing: sineInOut
 					}}>{gliders[i].title}</a
