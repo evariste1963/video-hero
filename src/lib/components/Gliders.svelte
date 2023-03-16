@@ -28,7 +28,7 @@
 			{:else}
 				<a
 					href="/"
-						use:scrollTo={{
+					use:scrollTo={{
 						ref: glider,
 						offset: -65,
 						duration: 1000 * (1 + i / 2),
