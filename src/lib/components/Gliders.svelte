@@ -53,6 +53,7 @@
 	gliders {
 		position: absolute;
 		display: flex;
+		flex-wrap: wrap; /* wrap gl;iders on smaller screen sizes*/
 		top: 60%;
 		width: 100%;
 		justify-content: center;
