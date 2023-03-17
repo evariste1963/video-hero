@@ -57,7 +57,7 @@
 		top: 60%;
 		width: 100%;
 		justify-content: center;
-		height: 15em;
+		height: fit-content;
 	}
 
 	.text-bg {
