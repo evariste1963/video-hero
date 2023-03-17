@@ -17,7 +17,10 @@
 		{ class: 'section3', title: Section3 },
 		{ class: 'section4', title: Section4 }
 	];
+	let innerWidth;
 </script>
+
+<svelte:window bind:innerWidth />
 
 <BackToTopBtn />
 
@@ -36,14 +39,15 @@
 {:else}
 	<div class="sub-text">colour your life in our wild and wonderful world</div>
 {/if}
-
-<Gliders />
-
+{#if innerWidth >= 700}
+	<Gliders />
+{/if}
 {#each sections as section, i}
 	<div class={section.class} use:scrollRef={section.class}>
 		<svelte:component this={section.title} />
 	</div>
 {/each}
+
 <style>
 	.hero {
 		position: sticky;
@@ -125,7 +129,7 @@
 		display: flex;
 		width: 100%;
 		min-height: 1000px;
-		height:auto;
+		height: auto;
 		margin-top: -6em;
 		background: rgba(253, 253, 169, 0.95);
 	}

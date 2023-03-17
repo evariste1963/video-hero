@@ -64,9 +64,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		height: 80%;
-		padding: 1.1em;
-		margin: 1.1em;
+
+		margin: 1vw;
 	}
 
 	gliders a {
@@ -75,7 +74,6 @@
 		align-items: center;
 		justify-content: center;
 		width: 10em;
-		height: 80%;
 		border-top: solid 2px #fff;
 		border-bottom: solid 2px #fff;
 		border-left: none;
@@ -83,7 +81,7 @@
 		font-size: 1.5rem;
 		font-weight: 500;
 		text-decoration: none;
-		padding: 1rem 1rem;
+		padding: 2em 1em;
 		border-radius: 0.7rem;
 		margin: 0;
 		color: rgba(255, 255, 255, 0.7);
