@@ -33,13 +33,13 @@
 	<img class="logo" src={logo} alt="WWR_logo" />
 	<div class="subTxt-banner">
 		<!-- <div class="subText-bg">""</div> -->
-		
+
 		{#if title === 'water'}
-				<div class="sub-text">come dip your toes in our wild and wonderful waters</div>
+			<div class="sub-text">come dip your toes in our wild and wonderful waters</div>
 		{:else if title === 'nature'}
-				<div class="sub-text">let us guide you through the wilderness</div>
+			<div class="sub-text">let us guide you through the wilderness</div>
 		{:else}
-				<div class="sub-text">colour your life in our wild and wonderful world</div>
+			<div class="sub-text">colour your life in our wild and wonderful world</div>
 		{/if}
 	</div>
 	{#if innerWidth >= 700}
@@ -54,7 +54,6 @@
 {/each}
 
 <style>
-
 	.hero {
 		position: sticky;
 		display: flex;
@@ -77,36 +76,32 @@
 		background-color: #000;
 	}
 
-	
 	.frame {
-		display:block;
-		position:absolute;
-		top:25%;
-		height:100%;
-		width:100%;
+		display: block;
+		position: absolute;
+		top: 20vh;
+		height: 100%;
+		width: 100%;
 		margin: 0 auto;
-		
 	}
 
 	.logo {
 		position: relative;
-		display:flex;
+		display: flex;
 		justify-content: center;
-		margin: 1em auto;
-		width: 30vw;
-		min-width: 400px;
-		
-		size: 50px 200px;
-		
+		margin: 2vh auto;
+		width: 60vh;
+		min-width: 30vh;
+
+		/* size: 50px 200px; */
 	}
 
 	.subTxt-banner {
-		position:relative;
+		position: relative;
 		align-items: center;
-		
 	}
 
-	 /* .subText-bg {
+	/* .subText-bg {
 		position: absolute;
 		top:0;
 		left:0;
@@ -122,7 +117,7 @@
 		width: 100%;
 		padding: 0 5%;
 		text-align: center;
-		font-size: 2.5rem;
+		font-size: 7vh;
 		color: #fff;
 		font-style: italic;
 		padding: 0.5em 0 1em 0;

@@ -54,7 +54,7 @@
 		position: relative;
 		display: flex;
 		flex-wrap: wrap; /* wrap gliders on smaller screen sizes*/
-		margin: 2em auto;
+		margin: 2vh auto;
 		width: 100%;
 		justify-content: center;
 		height: auto;
@@ -78,10 +78,10 @@
 		border-bottom: solid 2px #fff;
 		border-left: none;
 		border-right: none;
-		font-size: 1.5rem;
+		font-size: 4vh;
 		font-weight: 500;
 		text-decoration: none;
-		padding: 2em 1em;
+		padding: 4vh 2vh;
 		border-radius: 0.7rem;
 		margin: 0;
 		color: rgba(255, 255, 255, 0.7);
