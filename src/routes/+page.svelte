@@ -90,10 +90,8 @@
 		display: flex;
 		justify-content: center;
 		margin: 2vh auto;
-		width: 60vh;
-		min-width: 30vh;
-
-		/* size: 50px 200px; */
+		width: calc(150px + 30vmin);
+		
 	}
 
 	.subTxt-banner {
@@ -115,12 +113,11 @@
 	.sub-text {
 		z-index: 9;
 		width: 100%;
-		padding: 0 5%;
 		text-align: center;
-		font-size: 7vh;
+		font-size: calc(14px + 5vmin);
 		color: #fff;
 		font-style: italic;
-		padding: 0.5em 0 1em 0;
+		padding: 0.5em 1em;
 	}
 
 	.section1 {

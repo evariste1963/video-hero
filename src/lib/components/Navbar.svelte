@@ -55,7 +55,7 @@
 	}
 
 	.logo {
-		width: 20vh;
+		width: calc(50px + 10vmin);
 		margin-left: 2em;
 	}
 
@@ -63,7 +63,7 @@
 		margin: 0.4% 1em;
 		text-decoration: none;
 		color: rgb(255, 255, 255);
-		font-size: calc(12px + 0.5vw);
+		font-size: calc(16px + 0.8vmin);
 		padding: calc(0.1em + 0.3vw) 0;
 	}
 

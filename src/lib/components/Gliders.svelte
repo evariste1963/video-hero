@@ -78,10 +78,10 @@
 		border-bottom: solid 2px #fff;
 		border-left: none;
 		border-right: none;
-		font-size: 4vh;
+		font-size: 4vmin;
 		font-weight: 500;
 		text-decoration: none;
-		padding: 4vh 2vh;
+		padding: 6%;
 		border-radius: 0.7rem;
 		margin: 0;
 		color: rgba(255, 255, 255, 0.7);
