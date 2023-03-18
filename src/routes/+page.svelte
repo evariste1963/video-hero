@@ -28,21 +28,25 @@
 <div class="hero">
 	<video autoplay muted loop src={video} />
 </div>
-
-<!-- this selects the sub-heading based on the video type from the vodei dir path-->
-<img class="logo" src={logo} alt="WWR_logo" />
-<div class="subText-bg">""</div>
-{#if title === 'water'}
-	<div class="sub-text">come dip your toes in our wild and wonderful waters</div>
-{:else if title === 'nature'}
-	<div class="sub-text">let us guide you through the wilderness</div>
-{:else}
-	<div class="sub-text">colour your life in our wild and wonderful world</div>
-{/if}
-{#if innerWidth >= 700}
-	<!-- used instead of media or container queries -->
-	<Gliders />
-{/if}
+<div class="frame">
+	<!-- this selects the sub-heading based on the video type from the vodei dir path-->
+	<img class="logo" src={logo} alt="WWR_logo" />
+	<div class="subTxt-banner">
+		<!-- <div class="subText-bg">""</div> -->
+		
+		{#if title === 'water'}
+				<div class="sub-text">come dip your toes in our wild and wonderful waters</div>
+		{:else if title === 'nature'}
+				<div class="sub-text">let us guide you through the wilderness</div>
+		{:else}
+				<div class="sub-text">colour your life in our wild and wonderful world</div>
+		{/if}
+	</div>
+	{#if innerWidth >= 700}
+		<!-- used instead of media or container queries -->
+		<Gliders />
+	{/if}
+</div>
 {#each sections as section, i}
 	<div class={section.class} use:scrollRef={section.class}>
 		<svelte:component this={section.title} />
@@ -50,6 +54,7 @@
 {/each}
 
 <style>
+
 	.hero {
 		position: sticky;
 		display: flex;
@@ -72,35 +77,55 @@
 		background-color: #000;
 	}
 
-	.logo {
-		position: absolute;
-		width: 30vw;
-		min-width: 300px;
-		top: 35%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		size: 50px 200px;
+	
+	.frame {
+		display:block;
+		position:absolute;
+		top:25%;
+		height:100%;
+		width:100%;
+		margin: 0 auto;
+		
 	}
 
-	.subText-bg {
+	.logo {
+		position: relative;
+		display:flex;
+		justify-content: center;
+		margin: 1em auto;
+		width: 30vw;
+		min-width: 400px;
+		
+		size: 50px 200px;
+		
+	}
+
+	.subTxt-banner {
+		position:relative;
+		align-items: center;
+		
+	}
+
+	 /* .subText-bg {
 		position: absolute;
-		top: 50%;
+		top:0;
+		left:0;
 		width: 100%;
 		font-size: 2.5rem;
+		height:100%;
 		background-color: rgba(97, 108, 110, 1);
-		filter: blur(60px);
-	}
+		filter: blur(80px); 
+	}  */
 
 	.sub-text {
-		position: absolute;
-		top: 50%;
+		z-index: 9;
 		width: 100%;
 		padding: 0 5%;
-		margin: 0 auto;
 		text-align: center;
 		font-size: 2.5rem;
 		color: #fff;
 		font-style: italic;
+		padding: 0.5em 0 1em 0;
 	}
 
 	.section1 {

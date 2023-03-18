@@ -17,7 +17,7 @@
 	});
 </script>
 
-<div class="glider-bar" />
+<!-- <div class="glider-bar" /> -->
 <gliders>
 	{#each glidersArr as glider, i}
 		<div class="text-bg">
@@ -30,7 +30,7 @@
 					href="/"
 					use:scrollTo={{
 						ref: glider,
-						offset: -65,
+						offset: -40,
 						duration: 1000 * (1 + i / 2),
 						easing: sineInOut
 					}}>{gliders[i].title}</a
@@ -41,7 +41,7 @@
 </gliders>
 
 <style>
-	.glider-bar {
+	/* .glider-bar {
 		position: absolute;
 		display: flex;
 		top: 60%;
@@ -49,15 +49,15 @@
 		background-color: rgba(97, 108, 110, 0.7);
 		filter: blur(90px);
 		height: 15em;
-	}
+	} */
 	gliders {
-		position: absolute;
+		position: relative;
 		display: flex;
-		flex-wrap: wrap; /* wrap gl;iders on smaller screen sizes*/
-		top: 60%;
+		flex-wrap: wrap; /* wrap gliders on smaller screen sizes*/
+		margin: 2em auto;
 		width: 100%;
 		justify-content: center;
-		height: fit-content;
+		height: auto;
 	}
 
 	.text-bg {
