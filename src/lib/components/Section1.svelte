@@ -97,8 +97,7 @@
 	<br /><br />
 	<div class="ko-fi">
 		<a href="https://ko-fi.com/wildwomenretreats" class="ko-fi-txt" target="”_blank”"
-			>Support Wild Women retreats using Ko-Fi donations</a
-		>
+			> 💕💕💕 ---  Click here Support Wild Women retreats using Ko-Fi donations  --- 💕💕💕</a>
 	</div>
 
 	<br />
@@ -137,7 +136,7 @@
 		justify-content: center;
 		margin: 3em auto 6em auto;
 		text-align: center;
-		width: 75%;
+		width: 85vw;
 		
 	}
 
@@ -179,7 +178,7 @@
 	}
 
 	img {
-		width: 80%;
+		width: 60vw;
 		height: auto;
 		object-fit: contain;
 		border-radius: 10px;
@@ -187,5 +186,6 @@
 
 	a {
 		font-size: 1.2rem;
+		
 	}
 </style>
