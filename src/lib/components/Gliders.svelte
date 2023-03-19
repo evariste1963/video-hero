@@ -81,7 +81,7 @@
 		font-size: 4vmin;
 		font-weight: 500;
 		text-decoration: none;
-		padding: 6%;
+		padding: 3vmin;
 		border-radius: 0.7rem;
 		margin: 0;
 		color: rgba(255, 255, 255, 0.7);
