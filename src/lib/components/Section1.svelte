@@ -93,7 +93,7 @@
 		</div>
 	</div>
 	<br /><br />
-	<img style="width:80%" src={summerVillage2} alt="summer=-village-flyer" />
+	<img style="width:70%" src={summerVillage2} alt="summer=-village-flyer" />
 	<br /><br />
 	<div class="ko-fi">
 		<a href="https://ko-fi.com/wildwomenretreats" class="ko-fi-txt" target="”_blank”"
@@ -136,12 +136,12 @@
 		justify-content: center;
 		margin: 3em auto 6em auto;
 		text-align: center;
-		width: 85vw;
+		width: 80%
 		
 	}
 
 	.ko-fi {
-		width: 80%;
+		width: 70%;
 		margin: 0 auto;
 		align-items: center;
 		display: flex;
@@ -167,13 +167,17 @@
 		align-items: center;
 	}
 	h1 {
-		font-size: 2.1rem;
+		font-size: calc(1vmin + 1.5rem);
 		font-weight: bold;
 		text-align: center;
 	}
 
+	h2{
+		font-size: calc(1vmin + 1.1rem);
+	}
+
 	p {
-		font-size: 1.2rem;
+		font-size: calc(1vmin + 1rem);
 		text-align: justify;
 	}
 
@@ -185,7 +189,7 @@
 	}
 
 	a {
-		font-size: 1.2rem;
+		font-size: calc(1vmin + 0.7rem);
 		
 	}
 </style>
