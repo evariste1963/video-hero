@@ -50,13 +50,14 @@
 		<br /><br />
 		Warmly, Natalie, Boann, and Rozi with Afric, Gemma, Juli & Shelley xxx
 	</p>
-	<img src={wildPreciousLife} alt="wild-precious-life" />
+	<img style="width:70%" src={summerVillage2} alt="summer=-village-flyer" />
+
 	<br /><br />
 	<div class="lowDown">
 		<img class="left_wrap" src={wwOnBeach} alt="WW-on-beach" />
 		<div class="content-txt">
 			<h2 style="text-align:left">The Village Low Down!</h2>
-			<br />
+
 			<p class="lowDown-txt">
 				£170 - Full Price Ticket
 				<br />
@@ -91,18 +92,15 @@
 			</p>
 		</div>
 	</div>
-	<br /><br />
-	<img style="width:70%" src={summerVillage2} alt="summer=-village-flyer" />
-	<br /><br />
+
 	<div class="ko-fi">
 		<a href="https://ko-fi.com/wildwomenretreats" class="ko-fi-txt" target="”_blank”">
 			💕💕💕 --- Click here Support Wild Women retreats using Ko-Fi donations --- 💕💕💕</a
 		>
 	</div>
-
 	<br />
 	<img style="width:60%" src={littonCheney} alt="litton-cheney" />
-	<br /><br />
+	<br />
 	<h2>
 		To take your place at the Summer Village please complete the booking form <a
 			href="https://docs.google.com/forms/d/e/1FAIpQLSdCv5bU89Z_UQdT9du_GZx5rU9tvaA4X4g1tpx-Msr3VzkHYQ/viewform?usp=sf_link"
@@ -125,6 +123,12 @@
 	<a href="https://www.instagram.com/wildwomenretreats/" target="”_blank”">
 		www.instagram.com/wildwomenretreats</a
 	>
+	<br />
+	<hr />
+	<br />
+
+	<img style="width:70%" src={wildPreciousLife} alt="wild-precious-life" />
+	<br />
 </div>
 
 <!-- </div> -->
@@ -140,7 +144,7 @@
 
 	.ko-fi {
 		width: 70%;
-		margin: 0 auto;
+		margin: 0 auto 2vmin auto;
 		align-items: center;
 		display: flex;
 	}
@@ -162,17 +166,19 @@
 	}
 	.lowDown {
 		align-items: center;
-		height: fit-content;
-	}
-
-	.lowDown-txt {
-		text-align: justify;
+		height: auto;
+		margin-bottom: 2vmin;
+		overflow: auto;
 	}
 
 	.left_wrap {
 		float: left;
-		padding: 0 20px 20px 0;
+		padding: 0 10px 10px 0;
 		width: auto;
+	}
+
+	.lowDown-txt {
+		text-align: justify;
 	}
 
 	h1 {
@@ -191,7 +197,7 @@
 	}
 
 	img {
-		width: 60vw;
+		width: 60vmin;
 		height: auto;
 		object-fit: contain;
 		border-radius: 10px;
