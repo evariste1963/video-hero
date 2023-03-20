@@ -9,7 +9,6 @@
 
 <div class="contents1">
 	<img style="margin-top:2%;" src={summerVillage} alt="summer-village" />
-
 	<h1>
 		We are so pleased to announce a new celebratory weekend
 		<br />
@@ -54,9 +53,9 @@
 	<img src={wildPreciousLife} alt="wild-precious-life" />
 	<br /><br />
 	<div class="lowDown">
-		<img style="width:50%;" src={wwOnBeach} alt="WW-on-beach" />
-		<div style="margin-left:2em; text-align:left" class="content-txt">
-			<h2>The Village Low Down!</h2>
+		<img class="left_wrap" src={wwOnBeach} alt="WW-on-beach" />
+		<div class="content-txt">
+			<h2 style="text-align:left">The Village Low Down!</h2>
 			<br />
 			<p class="lowDown-txt">
 				£170 - Full Price Ticket
@@ -162,9 +161,20 @@
 		font-weight: bold;
 	}
 	.lowDown {
-		display: flex;
 		align-items: center;
+		height: fit-content;
 	}
+
+	.lowDown-txt {
+		text-align: justify;
+	}
+
+	.left_wrap {
+		float: left;
+		padding: 0 20px 20px 0;
+		width: auto;
+	}
+
 	h1 {
 		font-size: calc(1vmin + 1.5rem);
 		font-weight: bold;
