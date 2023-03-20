@@ -146,13 +146,13 @@
 	}
 
 	.ko-fi-txt {
-		font-size: 1.5rem;
+		font-size: clamp(0.85rem, 2vmin, 1.2rem);
 		text-decoration: none;
 		width: 100%;
 		color: #fff;
 		margin: 0 auto;
 		background: rgba(51, 83, 83, 0.9);
-		padding: 1em 5em;
+		padding: 2vmin 5vmin;
 		border-radius: 10px;
 	}
 
