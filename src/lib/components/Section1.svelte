@@ -96,8 +96,9 @@
 	<img style="width:70%" src={summerVillage2} alt="summer=-village-flyer" />
 	<br /><br />
 	<div class="ko-fi">
-		<a href="https://ko-fi.com/wildwomenretreats" class="ko-fi-txt" target="”_blank”"
-			> 💕💕💕 ---  Click here Support Wild Women retreats using Ko-Fi donations  --- 💕💕💕</a>
+		<a href="https://ko-fi.com/wildwomenretreats" class="ko-fi-txt" target="”_blank”">
+			💕💕💕 --- Click here Support Wild Women retreats using Ko-Fi donations --- 💕💕💕</a
+		>
 	</div>
 
 	<br />
@@ -129,15 +130,13 @@
 
 <!-- </div> -->
 <style>
-	
 	.contents1 {
 		transform: skewY(2deg);
 		align-items: center;
 		justify-content: center;
 		margin: 3em auto 6em auto;
 		text-align: center;
-		width: 80%
-		
+		width: 80%;
 	}
 
 	.ko-fi {
@@ -172,12 +171,12 @@
 		text-align: center;
 	}
 
-	h2{
+	h2 {
 		font-size: calc(1vmin + 1.1rem);
 	}
 
 	p {
-		font-size: calc(1vmin + 1rem);
+		font-size: clamp(0.85rem, 2vmin, 1.2rem);
 		text-align: justify;
 	}
 
@@ -190,6 +189,5 @@
 
 	a {
 		font-size: calc(1vmin + 0.7rem);
-		
 	}
 </style>
