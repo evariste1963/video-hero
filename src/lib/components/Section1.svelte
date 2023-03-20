@@ -200,7 +200,7 @@
 	}
 
 	img {
-		width: 60vmin;
+		width: 80vmin;
 		height: auto;
 		object-fit: contain;
 		border-radius: 10px;
