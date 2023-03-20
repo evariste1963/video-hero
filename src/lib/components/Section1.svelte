@@ -164,10 +164,13 @@
 		background: #555;
 		font-weight: bold;
 	}
+
 	.lowDown {
 		align-items: center;
 		height: auto;
 		margin-bottom: 2vmin;
+		/* if you define float to your child ( the image in this instance) then you have to clear your parent. 
+		Write overflow:hidden to your parent */
 		overflow: auto;
 	}
 
