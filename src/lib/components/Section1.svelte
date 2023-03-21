@@ -93,11 +93,12 @@
 		</div>
 	</div>
 
-	<div class="ko-fi">
+	<div class="ko-fi ">
 		<a href="https://ko-fi.com/wildwomenretreats" class="ko-fi-txt" target="”_blank”">
 			Click here Support Wild Women retreats using Ko-Fi donations
 		</a>
 	</div>
+
 	<br />
 	<img style="width:60%" src={littonCheney} alt="litton-cheney" />
 	<br />
@@ -143,6 +144,7 @@
 	}
 
 	.ko-fi {
+		position: relative;
 		width: 70%;
 		margin: 0 auto 2vmin auto;
 		align-items: center;
@@ -154,7 +156,6 @@
 		text-decoration: none;
 		width: 100%;
 		color: #fff;
-		margin: 0 auto;
 		background: rgba(51, 83, 83, 0.9);
 		padding: 2vmin 5vmin;
 		border-top: solid 2px #fff;
@@ -162,13 +163,49 @@
 		border-radius: 0.7rem;
 		border-left: none;
 		border-right: none;
+		box-shadow: 4px 4px 4px 0 rgba(97, 108, 110, 0.8);
 	}
 
+	.ko-fi-txt::before {
+		border-radius: 0.7rem;
+		content: ' ';
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		inset: 2px;
+		background: rgba(255, 255, 255, 0.5);
+		z-index: -1;
+		transform: scaleX(0);
+		transform-origin: top right;
+		transition: transform 0.75s ease;
+	}
+
+	.ko-fi-txt:hover::before {
+		transform: scaleX(1);
+		transform-origin: top left;
+	}
+
+	.ko-fi-txt:hover {
+		font-weight: bold;
+		color: #292727;
+		z-index: 9999;
+		border-radius: 0.7rem;
+	}
+
+	.ko-fi-txt:active::before,
+	.ko-fi-txt:active {
+		background-color: #2e3431;
+		color: #fff !important;
+	}
+	/*
 	.ko-fi-txt:hover {
 		background: #555;
 		font-weight: bold;
 	}
-
+*/
 	.lowDown {
 		align-items: center;
 		height: auto;
