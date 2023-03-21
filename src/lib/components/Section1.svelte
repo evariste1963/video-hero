@@ -50,7 +50,7 @@
 		<br /><br />
 		Warmly, Natalie, Boann, and Rozi with Afric, Gemma, Juli & Shelley xxx
 	</p>
-	<img style="width:70%" src={summerVillage2} alt="summer=-village-flyer" />
+	<img  src={summerVillage2} alt="summer=-village-flyer" />
 
 	<br /><br />
 	<div class="lowDown">
@@ -100,7 +100,7 @@
 	</div>
 
 	<br />
-	<img style="width:60%" src={littonCheney} alt="litton-cheney" />
+	<img  src={littonCheney} alt="litton-cheney" />
 	<br />
 	<h2>
 		To take your place at the Summer Village please complete the booking form <a
@@ -128,7 +128,7 @@
 	<hr />
 	<br />
 
-	<img style="width:70%" src={wildPreciousLife} alt="wild-precious-life" />
+	<img  src={wildPreciousLife} alt="wild-precious-life" />
 	<br />
 </div>
 
@@ -145,25 +145,30 @@
 
 	.ko-fi {
 		position: relative;
-		width: 70%;
-		margin: 0 auto 2vmin auto;
-		align-items: center;
 		display: flex;
+		width: 70%;
+		margin: 0 auto 1vmin auto;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.ko-fi-txt {
+		position: relative;
 		font-size: clamp(0.85rem, 2vmin, 1.2rem);
 		text-decoration: none;
 		width: 100%;
 		color: #fff;
 		background: rgba(51, 83, 83, 0.9);
 		padding: 2vmin 5vmin;
-		border-top: solid 2px #fff;
-		border-bottom: solid 2px #fff;
+		/* border-top: solid 2px #fff;
+		border-bottom: solid 2px #fff; */
 		border-radius: 0.7rem;
 		border-left: none;
 		border-right: none;
+		
+		transition: all 1s ease;
 		box-shadow: 4px 4px 4px 0 rgba(97, 108, 110, 0.8);
+		z-index: 1;
 	}
 
 	.ko-fi-txt::before {
@@ -191,7 +196,7 @@
 	.ko-fi-txt:hover {
 		font-weight: bold;
 		color: #292727;
-		z-index: 9999;
+		z-index: 1;
 		border-radius: 0.7rem;
 	}
 
@@ -209,7 +214,7 @@
 	.lowDown {
 		align-items: center;
 		height: auto;
-		margin-bottom: 2vmin;
+		margin-bottom: 1vmin;
 		/* if you define float to your child ( the image in this instance --> .left_wrap) then you have to clear your parent. 
 		Write overflow:hidden to your parent */
 		overflow: auto;
@@ -221,9 +226,9 @@
 		width: auto;
 	}
 
-	.lowDown-txt {
+	/* .lowDown-txt {
 		text-align: justify;
-	}
+	} */
 
 	h1 {
 		font-size: calc(1vmin + 1.5rem);
@@ -241,10 +246,13 @@
 	}
 
 	img {
-		width: 60vmin;
+		display:block;
+		width: 80vmin;
+		
 		height: auto;
 		object-fit: contain;
 		border-radius: 10px;
+		margin: 0 auto;
 	}
 
 	a {
