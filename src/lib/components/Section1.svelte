@@ -95,8 +95,8 @@
 
 	<div class="ko-fi">
 		<a href="https://ko-fi.com/wildwomenretreats" class="ko-fi-txt" target="”_blank”">
-			💕💕💕 --- Click here Support Wild Women retreats using Ko-Fi donations --- 💕💕💕</a
-		>
+			Click here Support Wild Women retreats using Ko-Fi donations
+		</a>
 	</div>
 	<br />
 	<img style="width:60%" src={littonCheney} alt="litton-cheney" />
@@ -157,7 +157,11 @@
 		margin: 0 auto;
 		background: rgba(51, 83, 83, 0.9);
 		padding: 2vmin 5vmin;
-		border-radius: 10px;
+		border-top: solid 2px #fff;
+		border-bottom: solid 2px #fff;
+		border-radius: 0.7rem;
+		border-left: none;
+		border-right: none;
 	}
 
 	.ko-fi-txt:hover {
@@ -169,7 +173,7 @@
 		align-items: center;
 		height: auto;
 		margin-bottom: 2vmin;
-		/* if you define float to your child ( the image in this instance) then you have to clear your parent. 
+		/* if you define float to your child ( the image in this instance --> .left_wrap) then you have to clear your parent. 
 		Write overflow:hidden to your parent */
 		overflow: auto;
 	}
@@ -200,7 +204,7 @@
 	}
 
 	img {
-		width: 80vmin;
+		width: 60vmin;
 		height: auto;
 		object-fit: contain;
 		border-radius: 10px;
