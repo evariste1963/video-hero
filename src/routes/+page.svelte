@@ -80,7 +80,7 @@
 		display: block;
 		position: absolute;
 		top: 20vh;
-		height: 100%;
+		height: auto;
 		width: 100%;
 		margin: 0 auto;
 	}
