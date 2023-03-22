@@ -18,9 +18,11 @@
 		{ class: 'section4', title: Section4 }
 	];
 	let innerWidth;
+	let speed = 4;
+	let scroll;
 </script>
 
-<svelte:window bind:innerWidth />
+<svelte:window bind:innerWidth bind:scrollY={scroll} />
 
 <BackToTopBtn />
 
@@ -28,7 +30,7 @@
 <div class="hero">
 	<video autoplay muted loop src={video} />
 </div>
-<div class="frame">
+<div class="frame" style:transform={`translate3d(0, ${(scroll / speed) * 2}px, 0)`}>
 	<!-- this selects the sub-heading based on the video type from the vodei dir path-->
 	<img class="logo" src={logo} alt="WWR_logo" />
 	<div class="subTxt-banner">
@@ -91,7 +93,6 @@
 		justify-content: center;
 		margin: 2vh auto;
 		width: calc(150px + 30vmin);
-		
 	}
 
 	.subTxt-banner {
@@ -126,7 +127,7 @@
 		transform: skewY(-2deg);
 		width: 100%;
 		height: auto;
-		background: rgba(236, 220, 196, 0.98);
+		background: rgba(236, 220, 196, 0.8);
 		margin-top: 4em;
 		padding-bottom: 4em;
 	}
