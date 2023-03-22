@@ -18,7 +18,7 @@
 		{ class: 'section4', title: Section4 }
 	];
 	let innerWidth;
-	let speed = 4;
+	let speed = 5.5;
 	let scroll;
 </script>
 
