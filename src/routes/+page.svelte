@@ -18,7 +18,6 @@
 		{ class: 'section4', title: Section4 }
 	];
 	let innerWidth;
-	let speed = 5.5;
 	let scroll;
 </script>
 
@@ -30,7 +29,7 @@
 <div class="hero">
 	<video autoplay muted loop src={video} />
 </div>
-<div class="frame" style:transform={`translate3d(0, ${(scroll / speed) * 2}px, 0)`}>
+<div class="frame" style:transform={`translate3d(0, ${(scroll / 5.5) * 2}px, 0)`}>
 	<!-- this selects the sub-heading based on the video type from the vodei dir path-->
 	<img class="logo" src={logo} alt="WWR_logo" />
 	<div class="subTxt-banner">
