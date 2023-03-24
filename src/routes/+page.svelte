@@ -19,6 +19,7 @@
 	];
 	let innerWidth;
 	let scroll;
+		
 </script>
 
 <svelte:window bind:innerWidth bind:scrollY={scroll} />
@@ -49,10 +50,11 @@
 	{/if}
 </div>
 {#each sections as section, i}
-	<div class={section.class} use:scrollRef={section.class}>
+	<div class={section.class}  use:scrollRef={section.class}>
 		<svelte:component this={section.title} />
 	</div>
 {/each}
+
 
 <style>
 	.hero {

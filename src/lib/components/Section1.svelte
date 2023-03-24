@@ -5,9 +5,11 @@
 	import wildPreciousLife from '../../lib/images/wildPreciousLife.jpg';
 	import littonCheney from '../../lib/images/littonCheney.jpg';
 	import wwOnBeach from '../../lib/images/wwOnBeach.jpg';
+	
 </script>
 
 <div class="contents1">
+	
 	<img style="margin-top:2%;" src={summerVillage} alt="summer-village" />
 	<h1>
 		We are so pleased to announce a new celebratory weekend
