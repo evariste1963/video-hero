@@ -33,8 +33,6 @@
 	<!-- this selects the sub-heading based on the video type from the vodei dir path-->
 	<img class="logo" src={logo} alt="WWR_logo" />
 	<div class="subTxt-banner">
-		<!-- <div class="subText-bg">""</div> -->
-
 		{#if title === 'water'}
 			<div class="sub-text">come dip your toes in our wild and wonderful waters</div>
 		{:else if title === 'nature'}
