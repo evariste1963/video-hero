@@ -41,7 +41,7 @@
 			<div class="sub-text">colour your life in our wild and wonderful world</div>
 		{/if}
 	</div>
-	{#if innerWidth >= 701}
+	{#if innerWidth >= 702}
 		<!-- used instead of media or container queries -->
 		<Gliders />
 	{/if}
