@@ -30,12 +30,14 @@
 {:else}
 	<Navbar />
 	{#key data.pathname}
-	<div
-	in:fade={{ duration:400, delay: 500}}
-	out:fade={{ duration:400}}
+	<div class="transition"
+	in:fade={{ duration:300, delay: 100}}
+	out:fade={{ duration:300}}
 	>
 	<slot />
 </div>
 {/key}
 	<Footer />
 {/if}
+
+
