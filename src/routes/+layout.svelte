@@ -3,9 +3,9 @@
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import Loader from '../lib/components/Loader.svelte';
-	import {fade} from 'svelte/transition'
+	import { fade } from 'svelte/transition';
 
-	export let data
+	export let data;
 
 	const pageLoader = () => {
 		pageIsLoaded = true;
@@ -30,14 +30,9 @@
 {:else}
 	<Navbar />
 	{#key data.pathname}
-	<div class="transition"
-	in:fade={{ duration:300, delay: 100}}
-	out:fade={{ duration:300}}
-	>
-	<slot />
-</div>
-{/key}
+		<div class="transition" in:fade={{ duration: 300, delay: 200 }} out:fade={{ duration: 200 }}>
+			<slot />
+		</div>
+	{/key}
 	<Footer />
 {/if}
-
-
