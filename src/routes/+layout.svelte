@@ -12,6 +12,12 @@
 	// dynamic destructured alternative
 	//$: ({pathname} = data)
 
+	const duration = 500;
+	const delay = duration + 50;
+
+	const transitionIn = { easing: cubicOut, duration, delay };
+	const transitionOut = { easing: cubicIn, duration };
+
 	const pageLoader = () => {
 		pageIsLoaded = true;
 	};
@@ -36,11 +42,7 @@
 	<Navbar />
 	{#key data.pathname}
 		<!-- {#key pathname}-->
-		<div
-			class="transition"
-			in:fade={{ easing: cubicOut, duration: 500, delay: 500 }}
-			out:fade={{ easing: cubicIn, duration: 500 }}
-		>
+		<div class="transition" in:fade={transitionIn} out:fade={transitionOut}>
 			<slot />
 		</div>
 	{/key}
