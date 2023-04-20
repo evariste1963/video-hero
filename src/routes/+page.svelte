@@ -7,7 +7,7 @@
 	import Section2 from '$lib/components/Section2.svelte';
 	import Section3 from '$lib/components/Section3.svelte';
 	import Section4 from '$lib/components/Section4.svelte';
-
+	
 	export let data;
 	let { video, title } = data;
 
@@ -26,7 +26,7 @@
 <BackToTopBtn />
 
 <!-- this is the main Hero area todo: move to separate component -->
-<div class="hero">
+<div class="hero" >
 	<video autoplay muted loop src={video} />
 </div>
 <div class="frame" style:transform={`translate3d(0, ${(scroll / 5.5) * 2}px, 0)`}>
