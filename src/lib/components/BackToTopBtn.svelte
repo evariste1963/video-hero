@@ -7,7 +7,7 @@
 	// 	el.scrollIntoView({ behavior: 'smooth' });
 	// }
 
-	let pos;
+	let pos = $state();
 </script>
 
 <!-- this is used to get the scroll position of the page-->
@@ -17,7 +17,7 @@
 <!-- <div class="top" /> -->
 {#if pos >= window.innerHeight - 25}
 	<div class="top-btn">
-		<button class="myBtn" on:click={() => scrollTop()}>Back to Top</button>
+		<button class="myBtn" onclick={() => scrollTop()}>Back to Top</button>
 	</div>
 {/if}
 

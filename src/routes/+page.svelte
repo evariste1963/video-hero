@@ -8,7 +8,7 @@
 	import Section3 from '$lib/components/Section3.svelte';
 	import Section4 from '$lib/components/Section4.svelte';
 	
-	export let data;
+	let { data } = $props();
 	let { video, title } = data;
 
 	let sections = [
@@ -17,8 +17,8 @@
 		{ class: 'section3', title: Section3 },
 		{ class: 'section4', title: Section4 }
 	];
-	let innerWidth;
-	let scroll;
+	let innerWidth = $state();
+	let scroll = $state();
 </script>
 
 <svelte:window bind:innerWidth bind:scrollY={scroll} />
@@ -27,7 +27,7 @@
 
 <!-- this is the main Hero area todo: move to separate component -->
 <div class="hero" >
-	<video autoplay muted loop src={video} />
+	<video autoplay muted loop src={video}></video>
 </div>
 <div class="frame" style:transform={`translate3d(0, ${(scroll / 5.5) * 2}px, 0)`}>
 	<!-- this selects the sub-heading based on the video type from the vodei dir path-->
@@ -48,7 +48,7 @@
 </div>
 {#each sections as section, i}
 	<div class={section.class} use:scrollRef={section.class}>
-		<svelte:component this={section.title} />
+		<section.title />
 	</div>
 {/each}
 
