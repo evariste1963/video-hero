@@ -32,5 +32,9 @@
 	"type": "module",
 	"dependencies": {
 		"svelte-scrolling": "^1.2.2"
-	}
+	},
+	"description": "Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).",
+	"main": "svelte.config.js",
+	"author": "thisme",
+	"license": "ISC"
 }
