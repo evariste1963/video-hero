@@ -7,7 +7,7 @@
 	import { cubicIn, cubicOut } from 'svelte/easing';
 	import { fly } from 'svelte/transition';
 
-	export let data;
+	let { data, children } = $props();
 
 	// dynamic destructured alternative
 	//$: ({pathname} = data)
@@ -21,7 +21,7 @@
 	const pageLoader = () => {
 		pageIsLoaded = true;
 	};
-	let pageIsLoaded = false;
+	let pageIsLoaded = $state(false);
 </script>
 
 {#if !pageIsLoaded}
@@ -42,8 +42,8 @@
 	<Navbar />
 	{#key data.pathname}
 		<!-- {#key pathname}-->
-		<div class="transition" in:fade={transitionIn} out:fade={transitionOut}>
-			<slot />
+		<div class="transition" in:fade|global={transitionIn} out:fade|global={transitionOut}>
+			{@render children?.()}
 		</div>
 	{/key}
 	<Footer />

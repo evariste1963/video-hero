@@ -10,7 +10,7 @@
 		{ section: 4, title: 'Gallery', content: 'view are photos' }
 	];
 
-	export let glidersArr = [];
+	let { glidersArr = [] } = $props();
 
 	gliders.forEach((glider) => {
 		glidersArr.push('section' + glider.section.toString());

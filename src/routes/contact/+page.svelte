@@ -49,8 +49,8 @@
       <div class="cards">
         <div
           class="card__inner not-flipped"
-          on:click={() => toggleCard(i)}
-          on:keydown={() => toggleCard(i)}
+          onclick={() => toggleCard(i)}
+          onkeydown={() => toggleCard(i)}
         >
           <!-- front of card-->
           <div class="card__face card__face--front">
